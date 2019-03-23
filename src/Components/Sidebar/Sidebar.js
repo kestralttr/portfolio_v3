@@ -27,8 +27,8 @@ export default class Sidebar extends React.Component {
                 <div className="Sidebar-chat-container">
                     <div className="Sidebar-chat-container-header">Direct Messages</div>
                     <ul>
-                        <li>alex</li>
-                        <li>user</li>
+                        <li>> alex</li>
+                        <li>> user</li>
                     </ul>
                 </div>
             </div>
