@@ -1,8 +1,11 @@
 
 .Sidebar {
+    position:fixed;
+    left:0;
+    top:0;
+    bottom:0;
     font-family: Lato;
-    width:200px;
-    height:100%;
+    width:20rem;
     background-color:black;
     color:#006600;
 }
@@ -12,6 +15,7 @@
     padding:1rem;
 }
 .Sidebar-chat-container {
+    font-family: Lato-Bold;
     font-size:1.6rem;
 }
 .Sidebar-chat-container-header {
