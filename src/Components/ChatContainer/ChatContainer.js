@@ -3,7 +3,7 @@ import React from 'react'
 const ChatContainer = props => {
     const children = React.Children.map(props.children, child => {
         return(
-            <li>{props.icon} {child}</li>
+            <li onClick={props.updateCurrentSection(`${child}`)} >{props.icon} {child}</li>
         )
     });
     return(

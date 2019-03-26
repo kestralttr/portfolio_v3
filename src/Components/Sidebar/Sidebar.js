@@ -9,13 +9,13 @@ const Sidebar = props => {
             <div>Alex Bennett</div>
             <div>user</div>
         </div>
-        <ChatContainer icon="#" header="Channels">
+        <ChatContainer icon="#" header="Channels" updateCurrentSection={props.updateCurrentSection}>
             {"about"}
             {"experience"}
             {"projects"}
             {"contact"}
         </ChatContainer>
-        <ChatContainer icon="•" header="Direct Messages">
+        <ChatContainer icon="•" header="Direct Messages" updateCurrentSection={props.updateCurrentSection}>
             {"alex"}
             {"user"}
         </ChatContainer>
