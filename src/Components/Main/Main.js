@@ -1,4 +1,5 @@
 import React from 'react'
+import MainMiddle from 'Components/MainMiddle/MainMiddle.js'
 import './Main.css'
 
 export default class Main extends React.Component {
@@ -7,7 +8,7 @@ export default class Main extends React.Component {
         return(
             <div className="Main">
                 <div className="Main-top"></div>
-                <div className="Main-middle"></div>
+                <MainMiddle currentSection={this.props.currentSection} />
                 <div className="Main-bottom">
                     <input />
                 </div>

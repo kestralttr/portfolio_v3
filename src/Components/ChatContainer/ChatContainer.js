@@ -13,7 +13,7 @@ const ChatContainer = props => {
             {children}
         </ul>
     </div>
-    )
+    );
 }
 
 export default ChatContainer;

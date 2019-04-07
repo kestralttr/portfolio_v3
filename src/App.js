@@ -18,7 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <Sidebar updateCurrentSection={this.updateCurrentSection}/>
-        <Main />
+        <Main currentSection={this.state.currentSection} />
       </div>
     );
   }
