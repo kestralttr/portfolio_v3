@@ -1,7 +1,8 @@
 import React from 'react'
 import About from 'Components/middleSections/About/About.js'
 import Experience from 'Components/middleSections/Experience/Experience.js'
-
+import Projects from 'Components/middleSections/Projects/Projects.js'
+import Contact from 'Components/middleSections/Contact/Contact.js'
 
 export default class MainMiddle extends React.Component {
     constructor(props) {
@@ -11,12 +12,15 @@ export default class MainMiddle extends React.Component {
     }
 
     renderSection() {
-        console.log(this.props.currentSection)
         switch (this.props.currentSection) {
             case "about":
                 return <About />;
             case "experience":
                 return <Experience />;
+            case "projects":
+                return <Projects />
+            case "contact":
+                return <Contact />
             default:
                 return null;
         }
