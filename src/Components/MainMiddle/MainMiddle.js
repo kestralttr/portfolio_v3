@@ -3,6 +3,7 @@ import About from 'Components/middleSections/About/About.js'
 import Experience from 'Components/middleSections/Experience/Experience.js'
 import Projects from 'Components/middleSections/Projects/Projects.js'
 import Contact from 'Components/middleSections/Contact/Contact.js'
+import './MainMiddle.css'
 
 export default class MainMiddle extends React.Component {
     constructor(props) {

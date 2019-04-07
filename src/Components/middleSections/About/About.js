@@ -3,7 +3,7 @@ import './About.css'
 
 const About = props => {
     return(
-        <div>
+        <div className="section-container">
             About Section
         </div>
     );

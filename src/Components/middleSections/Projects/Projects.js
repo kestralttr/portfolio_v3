@@ -3,7 +3,7 @@ import './Projects.css'
 
 const Projects = props => {
     return(
-        <div>
+        <div className="section-container">
             Projects Section
         </div>
     );
