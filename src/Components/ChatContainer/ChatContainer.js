@@ -1,9 +1,14 @@
 import React from 'react'
 
 const ChatContainer = props => {
+    let activeClass = "";
     const children = React.Children.map(props.children, child => {
+        activeClass = "";
+        if(props.currentSection && props.currentSection === child) {
+            activeClass = "active-section"
+        }
         return(
-            <li onClick={props.updateCurrentSection(`${child}`)} >{props.icon} {child}</li>
+            <li className={activeClass} onClick={props.updateCurrentSection(`${child}`)} >{props.icon} {child}</li>
         )
     });
     return(

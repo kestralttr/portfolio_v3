@@ -17,7 +17,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Sidebar updateCurrentSection={this.updateCurrentSection}/>
+        <Sidebar updateCurrentSection={this.updateCurrentSection} currentSection={this.state.currentSection}/>
         <Main currentSection={this.state.currentSection} />
       </div>
     );
