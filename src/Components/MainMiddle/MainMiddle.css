@@ -6,3 +6,28 @@
     width:auto;
     margin:0 5rem 0 5rem;
 }
+.message {
+    background-color: yellow;
+    position:relative;
+    min-height:3.5rem;
+    font-size:1.4rem;
+}
+.profile-pic {
+    position:absolute;
+    display:inline-block;
+    border: 1px solid red;
+    top:0;
+    left:0;
+    width:3.5rem;
+    height:3.5rem;
+}
+.author-name {
+    position:absolute;
+    left:5rem;
+}
+.text-container {
+    display:inline-block;
+    border:1px solid green;
+    margin-left:5rem;
+    margin-top:2.2rem;
+}
