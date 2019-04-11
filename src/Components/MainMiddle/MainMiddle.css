@@ -1,16 +1,37 @@
 .main-middle {
-
+    position:absolute;
+    top:6rem;
+    left:0;
+    right:0;
+    bottom:7rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color:cyan;
+    /* overflow: auto; */
+}
+.main-middle .messages-container {
+    overflow: auto;
+}
+.main-middle .messages-container::-webkit-scrollbar {
+    width:0.8rem;
+    background-color: transparent;
+}
+.main-middle .messages-container::-webkit-scrollbar-track {
+    width:1.5rem;
+}
+.main-middle .messages-container::-webkit-scrollbar-thumb {
+	border-radius: 1rem;
+	background-color: #8c8c8c;
 }
 .main-middle .section-container {
-    background-color:yellow;
     width:auto;
     margin:0 5rem 0 5rem;
 }
 .message {
-    background-color: yellow;
     position:relative;
     min-height:3.5rem;
-    font-size:1.4rem;
+    font-size:1.5rem;
 }
 .profile-pic {
     position:absolute;
@@ -27,7 +48,7 @@
 }
 .text-container {
     display:inline-block;
-    border:1px solid green;
     margin-left:5rem;
     margin-top:2.2rem;
+    line-height:2rem;
 }
