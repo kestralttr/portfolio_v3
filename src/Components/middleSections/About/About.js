@@ -1,5 +1,6 @@
 import React from 'react'
 import './About.css'
+import Image from 'Images/image.png'
 
 const About = props => {
     return(
@@ -48,6 +49,8 @@ const About = props => {
                     </div>
                 </div>
             </div>
+            <img src={Image}/>
+            <img src={process.env.PUBLIC_URL + '/mr_worldwide.jpg'}/>
             <div className="section-container">
                 <div className="message">
                     <div className="profile-pic"></div>
