@@ -11,7 +11,7 @@ export default class Main extends React.Component {
                     <MainTop currentSection={this.props.currentSection}/>
                 <MainMiddle currentSection={this.props.currentSection} />
                 <div className="Main-bottom">
-                    <input />
+                    <input className="message-input"/>
                 </div>
             </div>
         )
