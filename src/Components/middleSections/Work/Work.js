@@ -1,12 +1,12 @@
 import React from 'react'
-import './Projects.css'
+import './Work.css'
 
-const Projects = props => {
+const Work = props => {
     return(
         <div className="section-container">
-            Projects Section
+            Work Section
         </div>
     );
 }
 
-export default Projects;
+export default Work;

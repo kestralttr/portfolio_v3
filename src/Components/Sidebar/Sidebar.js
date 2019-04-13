@@ -12,7 +12,7 @@ const Sidebar = props => {
         <ChatContainer icon="#" header="Channels" updateCurrentSection={props.updateCurrentSection} currentSection={props.currentSection}>
             {"about"}
             {"experience"}
-            {"projects"}
+            {"work"}
             {"contact"}
         </ChatContainer>
         <ChatContainer icon="•" header="Direct Messages" updateCurrentSection={props.updateCurrentSection} currentSection={props.currentSection}>

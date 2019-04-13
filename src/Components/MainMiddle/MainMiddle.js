@@ -1,7 +1,7 @@
 import React from 'react'
 import About from 'Components/middleSections/About/About.js'
 import Experience from 'Components/middleSections/Experience/Experience.js'
-import Projects from 'Components/middleSections/Projects/Projects.js'
+import Work from 'Components/middleSections/Work/Work.js'
 import Contact from 'Components/middleSections/Contact/Contact.js'
 import './MainMiddle.css'
 
@@ -18,8 +18,8 @@ export default class MainMiddle extends React.Component {
                 return <About />;
             case "experience":
                 return <Experience />;
-            case "projects":
-                return <Projects />
+            case "work":
+                return <Work />
             case "contact":
                 return <Contact />
             default:
