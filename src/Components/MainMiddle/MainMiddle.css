@@ -25,14 +25,15 @@
 	border-radius: 1rem;
 	background-color: #8c8c8c;
 }
-.main-middle .section-container {
+.main-middle .message-container {
     width:auto;
     margin:0 5rem 0 5rem;
+    padding:1rem 0 1rem 0;
 }
 .message {
     position:relative;
     min-height:3.5rem;
-    font-size:1.5rem;
+    font-size:1.6rem;
 }
 .profile-pic {
     position:absolute;

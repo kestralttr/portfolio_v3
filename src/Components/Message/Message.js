@@ -3,7 +3,7 @@ import './Message.css'
 
 const Message = props => {
     return(
-        <div className="section-container">
+        <div className="message-container">
             <div className="message">
                 <img className="profile-pic" src={props.profilePic}/>
                 <div className="author-name">
