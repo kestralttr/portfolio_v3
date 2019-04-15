@@ -23,11 +23,13 @@ export default class Main extends React.Component {
     render() {
         return(
             <div className="Main">
-                    <MainTop currentSection={this.props.currentSection}/>
+                <MainTop currentSection={this.props.currentSection}/>
                 <MainMiddle currentSection={this.props.currentSection} />
                 <div className="Main-bottom">
-                    <div className="message-input-button">+</div>
-                    <Textarea className="message-input" placeholder="Jot something down"/>
+                    <div className="input-container">
+                        <div className="message-input-button">+</div>
+                        <Textarea className="message-input" placeholder="Jot something down"/>
+                    </div>
                 </div>
             </div>
         )
