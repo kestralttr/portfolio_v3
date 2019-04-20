@@ -14,10 +14,10 @@ export default class Main extends React.Component {
     }
 
     componentDidMount() {
-        let messageInput = document.getElementsByClassName('message-input')[0];
-        messageInput.addEventListener('resize', (e) => {
-            console.log(e)
-        })
+        // let messageInput = document.getElementsByClassName('message-input')[0];
+        // messageInput.addEventListener('resize', (e) => {
+        //     console.log(e)
+        // })
     }
 
     render() {
@@ -26,10 +26,8 @@ export default class Main extends React.Component {
                 <MainTop currentSection={this.props.currentSection}/>
                 <MainMiddle currentSection={this.props.currentSection} />
                 <div className="Main-bottom">
-                    <div className="input-container">
-                        <div className="message-input-button">+</div>
-                        <Textarea className="message-input" placeholder="Jot something down"/>
-                    </div>
+                    <div className="message-input-button">+</div>
+                    <input className="message-input" placeholder="Jot something down"/>
                 </div>
             </div>
         )
