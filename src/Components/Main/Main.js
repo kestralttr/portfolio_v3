@@ -2,7 +2,7 @@ import React from 'react'
 import MainTop from 'Components/MainTop/MainTop.js'
 import MainMiddle from 'Components/MainMiddle/MainMiddle.js'
 import './Main.css'
-import Textarea from 'react-textarea-autosize';
+// import Textarea from 'react-textarea-autosize';
 
 export default class Main extends React.Component {
 

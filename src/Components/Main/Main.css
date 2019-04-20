@@ -25,11 +25,11 @@
 .Main-bottom .message-input-button {
     box-sizing: border-box;
     width:5rem;
-    height:4.2rem;
+    height:5rem;
     border: 2px solid #a5a5a5;
     border-right:0px solid Transparent;
     border-radius: 5px 0 0 5px;
-    line-height:4.2rem;
+    line-height:5rem;
     font-size:3rem;
     color:#a5a5a5;
     text-align:center;
@@ -44,7 +44,7 @@
     font-size:1.6rem;
     resize:none;
     padding: 0 0 0 1rem;
-    line-height:4.2rem;
-    height:4.2rem;
+    line-height:5rem;
+    height:5rem;
     outline:none;
 }
