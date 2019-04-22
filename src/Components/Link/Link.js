@@ -6,7 +6,7 @@ const Link = props => {
         let imageSrc = `url(${props.link.imageSrc})`;
         return(
             <div className="link-container">
-            <a href={props.link.url} target="_blank">{props.link.text}</a>
+            <a className="link-url" href={props.link.url} target="_blank">{props.link.text}</a>
             <div className="link-image" style={{backgroundImage:imageSrc}}></div>
             </div>
         )

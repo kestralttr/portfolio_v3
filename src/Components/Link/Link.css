@@ -3,6 +3,22 @@
     margin-left:5rem;
     margin-top:2.2rem;
     line-height:2rem;
+    padding-left:2rem;
+    position:relative;
+}
+.link-container:after {
+    content:"";
+    background-color: #dbdbdb;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    width:5px;
+    border-radius:2px;
+
+}
+.link-url {
+
 }
 .link-image {
     display:block;
