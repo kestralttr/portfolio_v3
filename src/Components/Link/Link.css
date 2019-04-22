@@ -4,3 +4,10 @@
     margin-top:2.2rem;
     line-height:2rem;
 }
+.link-image {
+    display:block;
+    width:36rem;
+    height:22rem;
+    background-repeat: no-repeat;
+    background-position:center;
+}

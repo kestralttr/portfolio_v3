@@ -17,8 +17,12 @@ const About = props => {
             <Message 
             profilePic={Thumb_Bennett} 
             authorName="Alex 11:32am"
-            link={{text:"Google",url:"http://www.google.com"}}>
-                <div>This is a link to google!</div>
+            link={{
+                text:"'Sex Dungeon' Discovered on East Coast Island",
+                url:"http://www.google.com",
+                imageSrc:"https://pbs.twimg.com/profile_images/779305023507271681/GJJhYpD2_400x400.jpg"
+                }}>
+                <div>Dude, check out this story</div>
             </Message>
         </div>
     );
