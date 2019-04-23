@@ -45,6 +45,14 @@
     position:absolute;
     left:5rem;
 }
+.author-name strong {
+    font-weight: 700;
+    font-size:1.4rem;
+}
+.author-name span {
+    font-size: 1.1rem;
+    color:#4f4f4f;
+}
 .text-container {
     display:inline-block;
     margin-left:5rem;

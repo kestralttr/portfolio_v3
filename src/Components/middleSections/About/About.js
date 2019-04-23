@@ -2,28 +2,49 @@ import React from 'react'
 import './About.css'
 import Message from 'Components/Message/Message.js'
 import Thumb_Bennett from 'Images/thumb_bennett.jpg'
+import ignshows from 'Images/ignshows.jpg'
+import petcbd from 'Images/petcbd.jpg'
+import pvpauthor from 'Images/pvpauthor.jpg'
 
 const About = props => {
     return(
         <div className="content-container">
-            <Message profilePic={Thumb_Bennett} authorName="Alex 11:30am">
-                <div>Let's test out this here message.  I wonder what happens if we keep on typing for so long that it eventually runs off the side of the page and it has to wrap around.</div>
-            </Message>
-            <Message profilePic={Thumb_Bennett} authorName="Alex 11:30am" link={{text:"Google",url:"http://www.google.com"}}>
-                <div>But seriously, it wasn't all bad.</div>
-                <div>I got some sick swag, got to talk with Reggie Fils-Amie, and play MarioKart pretty much every day.</div>
-                <div>Oh right, and who can forget freaking E3???</div>
+            <Message 
+            profilePic={Thumb_Bennett} 
+            authorName="alex"
+            time="11:32 AM"
+            link={{
+                text:"IGN Shows Page",
+                url:"https://www.ign.com/watch",
+                description: "IGN needed a new hub for all their shows that was mobile-friendly and easy to understand.",
+                imageSrc:ignshows
+                }}>
+                <div>I worked with IGN's designers to build this webpage for their shows.</div>
             </Message>
             <Message 
             profilePic={Thumb_Bennett} 
-            authorName="Alex 11:32am"
+            authorName="alex"
+            time="11:32 AM"
             link={{
-                text:"'Sex Dungeon' Discovered on East Coast Island",
-                url:"http://www.google.com",
-                imageSrc:"https://pbs.twimg.com/profile_images/779305023507271681/GJJhYpD2_400x400.jpg"
+                text:"IGN Author Pages",
+                url:"https://www.ign.com/watch/naomi",
+                imageSrc:pvpauthor
                 }}>
-                <div>Dude, check out this story</div>
+                <div>The IGN author pages needed a rework.</div>
             </Message>
+
+            <Message 
+            profilePic={Thumb_Bennett} 
+            authorName="alex"
+            time="11:35 AM"
+            link={{
+                text:"Trapeze Labs Customer Sites",
+                url:"https://www.ign.com/watch/naomi",
+                imageSrc:petcbd
+                }}>
+                <div>All customers are directed to this conversion-optimized React application which I build from scratch.</div>
+            </Message>
+
         </div>
     );
 }

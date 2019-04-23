@@ -7,7 +7,7 @@ const Message = props => {
         <div className="message">
             <img className="profile-pic" src={props.profilePic} alt="Profile"/>
             <div className="author-name">
-                {props.authorName}
+                <strong>{props.authorName}</strong> <span>{props.time}</span>
             </div>
             <Link link={props.link} />
             <div className="text-container">
