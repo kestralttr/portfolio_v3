@@ -28,6 +28,7 @@ const About = props => {
             link={{
                 text:"IGN Author Pages",
                 url:"https://www.ign.com/watch/naomi",
+                description: "IGN author pages now pull all related videos and content from each author.",
                 imageSrc:pvpauthor
                 }}>
                 <div>The IGN author pages needed a rework.</div>
@@ -40,6 +41,7 @@ const About = props => {
             link={{
                 text:"Trapeze Labs Customer Sites",
                 url:"https://www.ign.com/watch/naomi",
+                description: "All customers are routed to one application, which rebuilds itself according to the current need",
                 imageSrc:petcbd
                 }}>
                 <div>All customers are directed to this conversion-optimized React application which I build from scratch.</div>
