@@ -32,14 +32,14 @@ const SettingsModal = (props) => {
                 </div>
                 <div className="modal-bottom">
                 <div className="selection-container">
-                    <img src={Darth_Vader} className="selection"/>
-                    <img src={Hermione_Granger} className="selection"/>
-                    <img src={Gandalf_The_Grey} className="selection"/>
+                    <img src={Darth_Vader} className="selection" alt="Darth Vader"/>
+                    <img src={Hermione_Granger} className="selection" alt="Hermione Granger"/>
+                    <img src={Gandalf_The_Grey} className="selection" alt="Gandalf The Grey"/>
                 </div>
                 <div className="selection-container">
-                    <img src={Black_Widow} className="selection"/>
-                    <img src={Tobias_Funke} className="selection"/>
-                    <img src={Wall_E} className="selection"/>
+                    <img src={Black_Widow} className="selection" alt="Black Widow"/>
+                    <img src={Tobias_Funke} className="selection" alt="Tobias Funke"/>
+                    <img src={Wall_E} className="selection" alt="Wall E"/>
                 </div>
                 <div className="button-container">
                     <div className="close-button" onClick={props.closeSettingsModal}>Close</div>
