@@ -4,7 +4,7 @@ import Darth_Vader from 'Images/avatar_thumbnails/darth_vader.jpg'
 import Hermione_Granger from 'Images/avatar_thumbnails/hermione_granger.jpg'
 import Wall_E from 'Images/avatar_thumbnails/wall_e.jpg'
 import Black_Widow from 'Images/avatar_thumbnails/black_widow.jpg'
-import Gandalf_The_Grey from 'Images/avatar_thumbnails/gandalf_the_grey.jpg'
+import Gandalf_The_White from 'Images/avatar_thumbnails/gandalf_the_white.jpg'
 import Tobias_Funke from 'Images/avatar_thumbnails/tobias_funke.jpg'
 
 const stopPropagation = (e) => {
@@ -42,7 +42,7 @@ const SettingsModal = (props) => {
                 <div className="selection-container">
                     <img src={Darth_Vader} className={returnClassName("Darth_Vader", props.activeAvatar)} onClick={props.selectAvatar('Darth_Vader')} alt="Darth Vader"/>
                     <img src={Hermione_Granger} className={returnClassName("Hermione_Granger", props.activeAvatar)} onClick={props.selectAvatar('Hermione_Granger')} alt="Hermione Granger"/>
-                    <img src={Gandalf_The_Grey} className={returnClassName("Gandalf_The_Grey", props.activeAvatar)} onClick={props.selectAvatar('Gandalf_The_Grey')} alt="Gandalf The Grey"/>
+                    <img src={Gandalf_The_White} className={returnClassName("Gandalf_The_White", props.activeAvatar)} onClick={props.selectAvatar('Gandalf_The_White')} alt="Gandalf The White"/>
                 </div>
                 <div className="selection-container">
                     <img src={Black_Widow} className={returnClassName("Black_Widow", props.activeAvatar)} onClick={props.selectAvatar('Black_Widow')} alt="Black Widow"/>
