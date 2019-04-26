@@ -33,7 +33,7 @@ const SettingsModal = (props) => {
                 <div className="modal-bottom">
                 <div className="selection-container">
                     <img src={Darth_Vader} className="selection" alt="Darth Vader"/>
-                    <img src={Hermione_Granger} className="selection" alt="Hermione Granger"/>
+                    <img src={Hermione_Granger} className="selectionActive" alt="Hermione Granger"/>
                     <img src={Gandalf_The_Grey} className="selection" alt="Gandalf The Grey"/>
                 </div>
                 <div className="selection-container">
