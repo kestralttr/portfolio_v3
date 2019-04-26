@@ -43,6 +43,7 @@ class App extends Component {
   }
 
   closeSettingsModal(e) {
+    e.stopPropagation();
     this.setState({settingsModalActive:false});
   }
 

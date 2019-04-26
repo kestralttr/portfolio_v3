@@ -1,5 +1,15 @@
 import React from 'react'
 import './SettingsModal.css'
+import Darth_Vader from 'Images/avatar_thumbnails/darth_vader.jpg'
+import Hermione_Granger from 'Images/avatar_thumbnails/hermione_granger.jpg'
+import Wall_E from 'Images/avatar_thumbnails/wall_e.jpg'
+import Black_Widow from 'Images/avatar_thumbnails/black_widow.jpg'
+import Gandalf_The_Grey from 'Images/avatar_thumbnails/gandalf_the_grey.jpg'
+import Tobias_Funke from 'Images/avatar_thumbnails/tobias_funke.jpg'
+
+const stopPropagation = (e) => {
+    e.stopPropagation();
+}
 
 const SettingsModal = (props) => {
     if(!props.active) {
@@ -7,7 +17,7 @@ const SettingsModal = (props) => {
     }
     return(
         <div className="background-overlay" onClick={props.closeSettingsModal}>
-            <div className="container">
+            <div className="container" onClick={stopPropagation}>
                 <div className="modal-top">
                 <div className="my-face">
                     <img src="http://www.imagemagick.org/Usage/thumbnails/thumbnail.gif" alt="Author Face"/>
@@ -22,17 +32,17 @@ const SettingsModal = (props) => {
                 </div>
                 <div className="modal-bottom">
                 <div className="selection-container">
-                    <div className="selection"></div>
-                    <div className="selection"></div>
-                    <div className="selection"></div>
+                    <img src={Darth_Vader} className="selection"/>
+                    <img src={Hermione_Granger} className="selection"/>
+                    <img src={Gandalf_The_Grey} className="selection"/>
                 </div>
                 <div className="selection-container">
-                    <div className="selection"></div>
-                    <div className="selection"></div>
-                    <div className="selection"></div>
+                    <img src={Black_Widow} className="selection"/>
+                    <img src={Tobias_Funke} className="selection"/>
+                    <img src={Wall_E} className="selection"/>
                 </div>
                 <div className="button-container">
-                    <div className="close-button">Close</div>
+                    <div className="close-button" onClick={props.closeSettingsModal}>Close</div>
                 </div>
                 </div>
             </div>
