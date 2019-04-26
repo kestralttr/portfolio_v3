@@ -10,12 +10,14 @@ class App extends Component {
 
     this.state = {
       currentSection: "about",
-      settingsModalActive: true
+      settingsModalActive: true,
+      activeAvatar: "Darth_Vader"
     }
 
     this.updateCurrentSection = this.updateCurrentSection.bind(this);
     this.openSettingsModal = this.openSettingsModal.bind(this);
     this.closeSettingsModal = this.closeSettingsModal.bind(this);
+    this.selectAvatar = this.selectAvatar.bind(this);
   }
 
   render() {
@@ -23,12 +25,18 @@ class App extends Component {
       <div className="App">
         <Sidebar updateCurrentSection={this.updateCurrentSection} currentSection={this.state.currentSection}/>
         <Main currentSection={this.state.currentSection} openSettingsModal={this.openSettingsModal} />
-        <SettingsModal active={this.state.settingsModalActive} closeSettingsModal={this.closeSettingsModal} />
+        <SettingsModal active={this.state.settingsModalActive} closeSettingsModal={this.closeSettingsModal} activeAvatar={this.state.activeAvatar} selectAvatar={this.selectAvatar} />
       </div>
     );
   }
 
   // helper functions
+
+  selectAvatar(avatar) {
+    return (e) => {
+      this.setState({activeAvatar: avatar});
+    }
+  }
 
   updateCurrentSection(section) {
     return (e) => {

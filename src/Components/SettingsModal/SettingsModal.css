@@ -72,10 +72,10 @@
     width:120px;
     cursor:pointer;
     border-radius:5px;
-    transition-property: transform -webkit-transform -ms-transform;
+    transition-property: transform -webkit-transform -ms-transform opacity;
     transition-duration: 0.2s;
     box-sizing: border-box;
-    opacity:0.6;
+    opacity:0.4;
     box-shadow:0px 0px 2px black;
   }
   .modal-bottom .selection-container .selection:hover {
@@ -91,6 +91,8 @@
     cursor:pointer;
     border-radius:5px;
     box-sizing: border-box;
+    transition-property: transform -webkit-transform -ms-transform opacity;
+    transition-duration: 0.2s;
   }
   .modal-bottom .button-container {
     position:absolute;

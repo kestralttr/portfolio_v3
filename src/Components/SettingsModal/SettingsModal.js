@@ -11,6 +11,14 @@ const stopPropagation = (e) => {
     e.stopPropagation();
 }
 
+const returnClassName = (avatarName,activeAvatar) => {
+    if(avatarName === activeAvatar) {
+        return "selectionActive";
+    } else {
+        return "selection";
+    }
+}
+
 const SettingsModal = (props) => {
     if(!props.active) {
         return null;
@@ -32,14 +40,14 @@ const SettingsModal = (props) => {
                 </div>
                 <div className="modal-bottom">
                 <div className="selection-container">
-                    <img src={Darth_Vader} className="selection" alt="Darth Vader"/>
-                    <img src={Hermione_Granger} className="selectionActive" alt="Hermione Granger"/>
-                    <img src={Gandalf_The_Grey} className="selection" alt="Gandalf The Grey"/>
+                    <img src={Darth_Vader} className={returnClassName("Darth_Vader", props.activeAvatar)} onClick={props.selectAvatar('Darth_Vader')} alt="Darth Vader"/>
+                    <img src={Hermione_Granger} className={returnClassName("Hermione_Granger", props.activeAvatar)} onClick={props.selectAvatar('Hermione_Granger')} alt="Hermione Granger"/>
+                    <img src={Gandalf_The_Grey} className={returnClassName("Gandalf_The_Grey", props.activeAvatar)} onClick={props.selectAvatar('Gandalf_The_Grey')} alt="Gandalf The Grey"/>
                 </div>
                 <div className="selection-container">
-                    <img src={Black_Widow} className="selection" alt="Black Widow"/>
-                    <img src={Tobias_Funke} className="selection" alt="Tobias Funke"/>
-                    <img src={Wall_E} className="selection" alt="Wall E"/>
+                    <img src={Black_Widow} className={returnClassName("Black_Widow", props.activeAvatar)} onClick={props.selectAvatar('Black_Widow')} alt="Black Widow"/>
+                    <img src={Tobias_Funke} className={returnClassName("Tobias_Funke", props.activeAvatar)} onClick={props.selectAvatar('Tobias_Funke')} alt="Tobias Funke"/>
+                    <img src={Wall_E} className={returnClassName("Wall_E", props.activeAvatar)} onClick={props.selectAvatar('Wall_E')} alt="Wall E"/>
                 </div>
                 <div className="button-container">
                     <div className="close-button" onClick={props.closeSettingsModal}>Close</div>
