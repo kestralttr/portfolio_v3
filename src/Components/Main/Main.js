@@ -13,17 +13,13 @@ export default class Main extends React.Component {
         }
     }
 
-    componentDidMount() {
-        // let messageInput = document.getElementsByClassName('message-input')[0];
-        // messageInput.addEventListener('resize', (e) => {
-        //     console.log(e)
-        // })
-    }
-
     render() {
         return(
             <div className="Main">
-                <MainTop currentSection={this.props.currentSection}/>
+                <MainTop 
+                currentSection={this.props.currentSection}
+                openSettingsModal={this.props.openSettingsModal}
+                />
                 <MainMiddle currentSection={this.props.currentSection} />
                 <div className="Main-bottom">
                     <div className="message-input-button">+</div>

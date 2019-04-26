@@ -1,5 +1,6 @@
 import React from 'react'
 import './MainTop.css'
+import Gear_Icon from 'Images/gear_icon.png'
 
 const returnDescription = (currentSection) => {
     switch (currentSection) {
@@ -25,6 +26,9 @@ const MainTop = (props) => {
             </div>
             <div className="main-top-right-container">
                 <input placeholder="Search" className="main-top-search-input" />
+                <div>
+                    <img className="settings-button" onClick={props.openSettingsModal} src={Gear_Icon} alt="Settings Button"/>
+                </div>
             </div>
         </div>
     )

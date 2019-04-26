@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Sidebar from 'Components/Sidebar/Sidebar.js'
 import Main from 'Components/Main/Main.js'
+import SettingsModal from 'Components/SettingsModal/SettingsModal.js'
 import './App.css';
 
 class App extends Component {
@@ -8,17 +9,21 @@ class App extends Component {
     super(props)
 
     this.state = {
-      currentSection: "about"
+      currentSection: "about",
+      settingsModalActive: true
     }
 
     this.updateCurrentSection = this.updateCurrentSection.bind(this);
+    this.openSettingsModal = this.openSettingsModal.bind(this);
+    this.closeSettingsModal = this.closeSettingsModal.bind(this);
   }
 
   render() {
     return (
       <div className="App">
         <Sidebar updateCurrentSection={this.updateCurrentSection} currentSection={this.state.currentSection}/>
-        <Main currentSection={this.state.currentSection} />
+        <Main currentSection={this.state.currentSection} openSettingsModal={this.openSettingsModal} />
+        <SettingsModal active={this.state.settingsModalActive} closeSettingsModal={this.closeSettingsModal} />
       </div>
     );
   }
@@ -31,6 +36,14 @@ class App extends Component {
         currentSection: section
       })
     }
+  }
+
+  openSettingsModal(e) {
+    this.setState({settingsModalActive:true});
+  }
+
+  closeSettingsModal(e) {
+    this.setState({settingsModalActive:false});
   }
 
 }
