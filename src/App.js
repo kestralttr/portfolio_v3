@@ -23,7 +23,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Sidebar updateCurrentSection={this.updateCurrentSection} currentSection={this.state.currentSection}/>
+        <Sidebar updateCurrentSection={this.updateCurrentSection} currentSection={this.state.currentSection} activeAvatar={this.state.activeAvatar} />
         <Main currentSection={this.state.currentSection} openSettingsModal={this.openSettingsModal} />
         <SettingsModal active={this.state.settingsModalActive} closeSettingsModal={this.closeSettingsModal} activeAvatar={this.state.activeAvatar} selectAvatar={this.selectAvatar} />
       </div>
