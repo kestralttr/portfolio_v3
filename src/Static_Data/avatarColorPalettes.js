@@ -4,7 +4,7 @@ const avatarColorPalettes = {
         itemText: "#999999",
         activeItemBG: "#5e5e5e",
         activeItemText: "#ffffff",
-        hoverBG: "#2b2b2b"
+        hoverBG: "#1b00ed"
     },
     Hermione_Granger: {
         colBG: "red",

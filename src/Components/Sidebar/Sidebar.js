@@ -17,7 +17,7 @@ const Sidebar = props => {
             <div>Alex Bennett</div>
             <div>user</div>
         </div>
-        <ChatContainer icon="#" header="Channels" updateCurrentSection={props.updateCurrentSection} currentSection={props.currentSection}>
+        <ChatContainer icon="#" hoverBGColor={returnColor(props.activeAvatar,"hoverBG")} header="Channels" updateCurrentSection={props.updateCurrentSection} currentSection={props.currentSection}>
             {"about"}
             {"experience"}
             {"work"}

@@ -1,4 +1,5 @@
 import React from 'react'
+import Radium from 'radium'
 
 const ChatContainer = props => {
     let activeClass = "";
@@ -8,7 +9,7 @@ const ChatContainer = props => {
             activeClass = "active-section"
         }
         return(
-            <li className={activeClass} onClick={props.updateCurrentSection(`${child}`)} >{props.icon} {child}</li>
+            <li className={activeClass} style={{":hover":{color: props.hoverBGColor}}} onClick={props.updateCurrentSection(`${child}`)} >{props.icon} {child}</li>
         )
     });
     return(
@@ -21,4 +22,4 @@ const ChatContainer = props => {
     );
 }
 
-export default ChatContainer;
+export default Radium(ChatContainer);
