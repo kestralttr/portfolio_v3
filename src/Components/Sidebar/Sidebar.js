@@ -17,13 +17,29 @@ const Sidebar = props => {
             <div>Alex Bennett</div>
             <div>user</div>
         </div>
-        <ChatContainer icon="#" hoverBGColor={returnColor(props.activeAvatar,"hoverBG")} header="Channels" updateCurrentSection={props.updateCurrentSection} currentSection={props.currentSection}>
+        <ChatContainer
+        icon="#"
+        hoverBG={returnColor(props.activeAvatar,"hoverBG")}
+        activeItemBG={returnColor(props.activeAvatar,"activeItemBG")}
+        activeItemText={returnColor(props.activeAvatar,"activeItemText")}
+        header="Channels"
+        updateCurrentSection={props.updateCurrentSection}
+        currentSection={props.currentSection}
+        >
             {"about"}
             {"experience"}
             {"work"}
             {"contact"}
         </ChatContainer>
-        <ChatContainer icon="•" header="Direct Messages" updateCurrentSection={props.updateCurrentSection} currentSection={props.currentSection}>
+        <ChatContainer
+        icon="•"
+        hoverBG={returnColor(props.activeAvatar,"hoverBG")}
+        activeItemBG={returnColor(props.activeAvatar,"activeItemBG")}
+        activeItemText={returnColor(props.activeAvatar,"activeItemText")}
+        header="Direct Messages"
+        updateCurrentSection={props.updateCurrentSection}
+        currentSection={props.currentSection}
+        >
             {"alex"}
             {"user"}
         </ChatContainer>

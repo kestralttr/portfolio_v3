@@ -9,7 +9,15 @@ const ChatContainer = props => {
             activeClass = "active-section"
         }
         return(
-            <li className={activeClass} style={{":hover":{color: props.hoverBGColor}}} onClick={props.updateCurrentSection(`${child}`)} >{props.icon} {child}</li>
+            <li className={activeClass}
+            style={{
+                ":hover":{color: props.hoverBG},
+                color:props.activeItemText,
+                backgroundColor:props.activeItemBG
+            }}
+            onClick={props.updateCurrentSection(`${child}`)}
+            >
+                {props.icon} {child}</li>
         )
     });
     return(
