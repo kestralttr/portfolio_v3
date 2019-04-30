@@ -2,8 +2,8 @@ import React from 'react'
 import './SettingsModal.css'
 import Darth_Vader from 'Images/avatar_thumbnails/darth_vader.jpg'
 import Hermione_Granger from 'Images/avatar_thumbnails/hermione_granger.jpg'
-import Wall_E from 'Images/avatar_thumbnails/wall_e.jpg'
-import Black_Widow from 'Images/avatar_thumbnails/black_widow.jpg'
+import Harley_Quinn from 'Images/avatar_thumbnails/harley_quinn.jpg'
+import The_Hulk from 'Images/avatar_thumbnails/the_hulk.jpg'
 import Gandalf_The_White from 'Images/avatar_thumbnails/gandalf_the_white.jpg'
 import Tobias_Funke from 'Images/avatar_thumbnails/tobias_funke.jpg'
 
@@ -45,9 +45,9 @@ const SettingsModal = (props) => {
                     <img src={Gandalf_The_White} className={returnClassName("Gandalf_The_White", props.activeAvatar)} onClick={props.selectAvatar('Gandalf_The_White')} alt="Gandalf The White"/>
                 </div>
                 <div className="selection-container">
-                    <img src={Black_Widow} className={returnClassName("Black_Widow", props.activeAvatar)} onClick={props.selectAvatar('Black_Widow')} alt="Black Widow"/>
+                    <img src={The_Hulk} className={returnClassName("The_Hulk", props.activeAvatar)} onClick={props.selectAvatar('The_Hulk')} alt="Black Widow"/>
                     <img src={Tobias_Funke} className={returnClassName("Tobias_Funke", props.activeAvatar)} onClick={props.selectAvatar('Tobias_Funke')} alt="Tobias Funke"/>
-                    <img src={Wall_E} className={returnClassName("Wall_E", props.activeAvatar)} onClick={props.selectAvatar('Wall_E')} alt="Wall E"/>
+                    <img src={Harley_Quinn} className={returnClassName("Harley_Quinn", props.activeAvatar)} onClick={props.selectAvatar('Harley_Quinn')} alt="Wall E"/>
                 </div>
                 <div className="button-container">
                     <div className="close-button" onClick={props.closeSettingsModal}>Close</div>

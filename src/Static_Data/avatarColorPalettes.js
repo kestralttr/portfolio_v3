@@ -14,13 +14,13 @@ const avatarColorPalettes = {
         hoverBG: "#ae0001"
     },
     Gandalf_The_White: {
-        colBG: "#000000",
-        itemText: "#999999",
-        activeItemBG: "#5e5e5e",
-        activeItemText: "#ffffff",
-        hoverBG: "#2b2b2b"
+        colBG: "#ffffff",
+        itemText: "#d2d1d1",
+        activeItemBG: "#d8f6f0",
+        activeItemText: "#a8a7a7",
+        hoverBG: "#65fdf9"
     },
-    Black_Widow: {
+    The_Hulk: {
         colBG: "#000000",
         itemText: "#999999",
         activeItemBG: "#5e5e5e",
@@ -34,7 +34,7 @@ const avatarColorPalettes = {
         activeItemText: "#ffffff",
         hoverBG: "#2b2b2b"
     },
-    Wall_E: {
+    Harley_Quinn: {
         colBG: "#000000",
         itemText: "#999999",
         activeItemBG: "#5e5e5e",
