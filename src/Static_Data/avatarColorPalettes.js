@@ -32,7 +32,7 @@ const avatarColorPalettes = {
         itemText: "#003366",
         activeItemBG: "#001A33",
         activeItemText: "#0066CC",
-        hoverBG: "#0066CC"
+        hoverBG: "#4fa7ff"
     },
     Harley_Quinn: {
         colBG: "#c13252",
