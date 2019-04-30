@@ -2,6 +2,7 @@ import React from 'react';
 import './Sidebar.css';
 import ChatContainer from 'Components/ChatContainer/ChatContainer'
 import avatarColorPalettes from 'Static_Data/avatarColorPalettes.js'
+import returnAvatarName from 'Global_Functions/returnAvatarName.js'
 
 const returnColor = (avatar, key) => {
     return avatarColorPalettes[avatar][key];
@@ -14,8 +15,8 @@ const Sidebar = props => {
             color:returnColor(props.activeAvatar,"itemText")
             }}>
         <div className="Sidebar-header">
-            <div>Alex Bennett</div>
-            <div>user</div>
+            <div>Alex Bennett's Portfolio</div>
+            <div>{returnAvatarName(props.activeAvatar)}</div>
         </div>
         <ChatContainer
         icon="#"
@@ -41,7 +42,7 @@ const Sidebar = props => {
         currentSection={props.currentSection}
         >
             {"alex"}
-            {"user"}
+            {returnAvatarName(props.activeAvatar)}
         </ChatContainer>
     </div>
     )
