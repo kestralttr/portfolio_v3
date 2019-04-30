@@ -3,17 +3,26 @@ import Radium from 'radium'
 
 const ChatContainer = props => {
     let activeClass = "";
+    let activeBGColor = null;
+    let activeTextColor = null;
     const children = React.Children.map(props.children, child => {
         activeClass = "";
         if(props.currentSection && props.currentSection === child) {
-            activeClass = "active-section"
+            activeClass = "active-section";
+            activeBGColor = props.activeItemBG;
+            activeTextColor = props.activeItemText;
+        } else {
+            activeClass = "";
+            activeBGColor = null;
+            activeTextColor = null;
         }
         return(
             <li className={activeClass}
             style={{
-                ":hover":{color: props.hoverBG},
-                color:props.activeItemText,
-                backgroundColor:props.activeItemBG
+                ":hover":{backgroundColor: props.hoverBG},
+                backgroundColor: activeBGColor,
+                color: activeTextColor
+
             }}
             onClick={props.updateCurrentSection(`${child}`)}
             >

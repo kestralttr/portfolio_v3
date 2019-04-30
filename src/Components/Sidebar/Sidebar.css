@@ -26,10 +26,10 @@
     cursor:pointer;
 }
 .Sidebar-chat-container li:hover {
-    background-color:#006600;
-    color:#00FF00;
+    /* background-color:#006600;
+    color:#00FF00; */
 }
 .active-section {
-    background-color:#006600;
-    color:#00FF00;
+    /* background-color:#006600;
+    color:#00FF00; */
 }

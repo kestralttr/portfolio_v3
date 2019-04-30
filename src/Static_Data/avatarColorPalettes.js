@@ -2,9 +2,9 @@ const avatarColorPalettes = {
     Darth_Vader: {
         colBG: "#000000",
         itemText: "#999999",
-        activeItemBG: "#5e5e5e",
-        activeItemText: "#ffffff",
-        hoverBG: "#1b00ed"
+        activeItemBG: "#242424",
+        activeItemText: "#ff0000",
+        hoverBG: "#242424"
     },
     Hermione_Granger: {
         colBG: "red",
