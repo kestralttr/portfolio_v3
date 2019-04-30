@@ -21,25 +21,25 @@ const avatarColorPalettes = {
         hoverBG: "#65fdf9"
     },
     The_Hulk: {
-        colBG: "#000000",
-        itemText: "#999999",
-        activeItemBG: "#5e5e5e",
-        activeItemText: "#ffffff",
-        hoverBG: "#2b2b2b"
+        colBG: "#455d3b",
+        itemText: "#253324",
+        activeItemBG: "#5a4862",
+        activeItemText: "#9bc063",
+        hoverBG: "#9bc063"
     },
     Tobias_Funke: {
-        colBG: "#000000",
-        itemText: "#999999",
-        activeItemBG: "#5e5e5e",
-        activeItemText: "#ffffff",
-        hoverBG: "#2b2b2b"
+        colBG: "#0059B3",
+        itemText: "#003366",
+        activeItemBG: "#001A33",
+        activeItemText: "#0066CC",
+        hoverBG: "#0066CC"
     },
     Harley_Quinn: {
-        colBG: "#000000",
-        itemText: "#999999",
-        activeItemBG: "#5e5e5e",
+        colBG: "#c13252",
+        itemText: "#2c3772",
+        activeItemBG: "#0e7d9c",
         activeItemText: "#ffffff",
-        hoverBG: "#2b2b2b"
+        hoverBG: "#d3db8c"
     }
 }
 
