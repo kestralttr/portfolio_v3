@@ -14,11 +14,11 @@ const avatarColorPalettes = {
         hoverBG: "#ae0001"
     },
     Gandalf_The_White: {
-        colBG: "#ffffff",
-        itemText: "#d2d1d1",
+        colBG: "#e2e2e2",
+        itemText: "#b7b7b7",
         activeItemBG: "#d8f6f0",
         activeItemText: "#a8a7a7",
-        hoverBG: "#65fdf9"
+        hoverBG: "#ffffff"
     },
     The_Hulk: {
         colBG: "#455d3b",
