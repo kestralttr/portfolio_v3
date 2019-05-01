@@ -6,6 +6,7 @@ import Harley_Quinn from 'Images/avatar_thumbnails/harley_quinn.jpg'
 import The_Hulk from 'Images/avatar_thumbnails/the_hulk.jpg'
 import Gandalf_The_White from 'Images/avatar_thumbnails/gandalf_the_white.jpg'
 import Tobias_Funke from 'Images/avatar_thumbnails/tobias_funke.jpg'
+import MUHFACE from 'Images/muhface.jpg'
 
 const stopPropagation = (e) => {
     e.stopPropagation();
@@ -23,11 +24,12 @@ const SettingsModal = (props) => {
     if(!props.active) {
         return null;
     }
+    let muhFaceBackground = `url(${MUHFACE})`;
     return(
         <div className="background-overlay" onClick={props.closeSettingsModal}>
             <div className="container" onClick={stopPropagation}>
-                <div className="modal-top">
-                <div className="my-face">
+                <div className="modal-top" style={{backgroundImage: muhFaceBackground}}>
+                {/* <div className="my-face">
                     <img src="http://www.imagemagick.org/Usage/thumbnails/thumbnail.gif" alt="Author Face"/>
                 </div>
                 <div className="modal-header-container">
@@ -36,9 +38,18 @@ const SettingsModal = (props) => {
                         <div>Pick your avatar and preferred theme below, then close this window to get started.</div>
                         <div>And don't worry, you can return to this menu at any time by clicking the Settings icon in the top right corner.</div>
                     </div>
+                </div> */}
+                <div className="header-text-container">
+                    <h1>Alex Bennett</h1>
+                    <p>Web Application Developer</p>
+                    <br></br>
+                    <p>I love working on the front-end, especially in React.js.  </p>
                 </div>
                 </div>
                 <div className="modal-bottom">
+                    <p className="instructions">
+                        If you want to know more about me and my work, choose your avatar and let's get started!
+                    </p>
                 <div className="selection-container">
                     <img src={Darth_Vader} className={returnClassName("Darth_Vader", props.activeAvatar)} onClick={props.selectAvatar('Darth_Vader')} alt="Darth Vader"/>
                     <img src={Hermione_Granger} className={returnClassName("Hermione_Granger", props.activeAvatar)} onClick={props.selectAvatar('Hermione_Granger')} alt="Hermione Granger"/>
