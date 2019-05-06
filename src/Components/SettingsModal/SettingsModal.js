@@ -28,22 +28,13 @@ const SettingsModal = (props) => {
     return(
         <div className="background-overlay" onClick={props.closeSettingsModal}>
             <div className="container" onClick={stopPropagation}>
+            <div className="close-button" onClick={props.closeSettingsModal}>X</div>
                 <div className="modal-top" style={{backgroundImage: muhFaceBackground}}>
-                {/* <div className="my-face">
-                    <img src="http://www.imagemagick.org/Usage/thumbnails/thumbnail.gif" alt="Author Face"/>
-                </div>
-                <div className="modal-header-container">
-                    <div className="modal-header">
-                        <h1>Welcome to my Slack-themed portfolio site!</h1>
-                        <div>Pick your avatar and preferred theme below, then close this window to get started.</div>
-                        <div>And don't worry, you can return to this menu at any time by clicking the Settings icon in the top right corner.</div>
-                    </div>
-                </div> */}
                 <div className="header-text-container">
                     <h1>Alex Bennett</h1>
-                    <p>Web Application Developer</p>
+                    <p>Front-End JavaScript Developer</p>
                     <br></br>
-                    <p>I love working on the front-end, especially in React.js.  </p>
+                    <p>Versatile Front-End Developer with 2+ years of professional experience designing, building, and improving complex e-commerce web applications.  Specializes in ReactJS/Redux.  </p>
                 </div>
                 </div>
                 <div className="modal-bottom">
@@ -60,9 +51,9 @@ const SettingsModal = (props) => {
                     <img src={Tobias_Funke} className={returnClassName("Tobias_Funke", props.activeAvatar)} onClick={props.selectAvatar('Tobias_Funke')} alt="Tobias Funke"/>
                     <img src={Harley_Quinn} className={returnClassName("Harley_Quinn", props.activeAvatar)} onClick={props.selectAvatar('Harley_Quinn')} alt="Wall E"/>
                 </div>
-                <div className="button-container">
+                {/* <div className="button-container">
                     <div className="close-button" onClick={props.closeSettingsModal}>Close</div>
-                </div>
+                </div> */}
                 </div>
             </div>
         </div>
