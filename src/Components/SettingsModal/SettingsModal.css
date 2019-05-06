@@ -1,5 +1,5 @@
 .background-overlay {
-    font-family: Lato;
+    font-family: Raleway;
     position:fixed;
     left:0;
     right:0;
@@ -32,8 +32,6 @@
 }
 .modal-top .header-text-container {
     position:absolute;
-    /* background-color:magenta; */
-    /* border:5px solid red; */
     top:3rem;
     left:1.5rem;
     width:28.5rem;
@@ -43,30 +41,9 @@
 .modal-top .header-text-container h1 {
     font-size:3rem;
 }
-  /* .modal-top > div {
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
-  }
-  .modal-top > div > img {
-    max-width:100px;
-    border-radius:50%;
-  }
-  .my-face {
-    width:100px;
-  }
-  .modal-header-container {
-    max-width:500px;
-    padding-left:10px;
-    box-sizing:border-box;
-  }
-  .modal-header-container > div > h1 {
-    font-size:2.4rem;
-  }
-  .modal-header div {
-    font-size:1.4rem;
-  } */
+.modal-top .header-text-container p {
+    line-height:2.2rem;
+}
 .modal-button-example {
     width:100px;
 }
@@ -79,9 +56,12 @@
     overflow:hidden;
 }
 .modal-bottom .instructions {
+    font-weight:700;
     text-align: center;
     padding:2rem 0rem;
     font-size:2rem;
+    width:85%;
+    margin:0 auto;
 }
 .modal-bottom .selection-container {
     display:flex;
@@ -123,17 +103,6 @@
     transition-duration: 0.2s;
     box-shadow:2px 2px 2px black;
 }
-/* .modal-bottom .button-container {
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    height:75px;
-    text-align:center;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-} */
 .container .close-button {
     display:inline-block;
     color:white;

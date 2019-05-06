@@ -13,6 +13,11 @@
   src: local('Lato-Italic'), url(fonts/Lato-Italic.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'), url(fonts/Raleway.woff) format('woff');
+}
+
 body {
   margin: 0;
   padding: 0;
