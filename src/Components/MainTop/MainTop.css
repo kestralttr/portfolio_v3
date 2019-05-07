@@ -40,8 +40,17 @@
     height:3rem;
     line-height:3rem;
 }
-.main-top-right-container .download-resume {
+.main-top-right-container .download-button {
     height:3rem;
+    color:grey;
+    display:inline-block;
+    border:1px solid grey;
+    box-sizing: border-box;
+    border-radius:5px;
+    padding:0px 5px;
+    font-size:1.4rem;
+    text-decoration:none;
+    cursor:pointer;
 }
 .main-top-right-container div .settings-button {
     height:3rem;

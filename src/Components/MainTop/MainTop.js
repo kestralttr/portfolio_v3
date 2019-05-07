@@ -25,7 +25,9 @@ const MainTop = (props) => {
                 <div className="main-top-description">{returnDescription(props.currentSection)}</div>
             </div>
             <div className="main-top-right-container">
-                <a className="download-resume" target="_blank" rel="noopener noreferrer" href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0">Download Resume</a>
+                <div>
+                    <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0">Download Resume</a>
+                </div>
                 <div>
                     <img className="settings-button" onClick={props.openSettingsModal} src={Gear_Icon} alt="Settings Button"/>
                 </div>

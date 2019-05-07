@@ -5,21 +5,24 @@ const ChatContainer = props => {
     let activeClass = "";
     let activeBGColor = null;
     let activeTextColor = null;
+    let hoverColor = null;
     const children = React.Children.map(props.children, child => {
         activeClass = "";
         if(props.currentSection && props.currentSection === child) {
             activeClass = "active-section";
             activeBGColor = props.activeItemBG;
             activeTextColor = props.activeItemText;
+            hoverColor = props.activeItemBG;
         } else {
             activeClass = "";
             activeBGColor = null;
             activeTextColor = null;
+            hoverColor = props.hoverBG;
         }
         return(
             <li className={activeClass}
             style={{
-                ":hover":{backgroundColor: props.hoverBG},
+                ":hover":{backgroundColor: hoverColor},
                 backgroundColor: activeBGColor,
                 color: activeTextColor
 

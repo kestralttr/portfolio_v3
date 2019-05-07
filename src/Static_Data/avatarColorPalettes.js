@@ -25,7 +25,7 @@ const avatarColorPalettes = {
         itemText: "#253324",
         activeItemBG: "#5a4862",
         activeItemText: "#9bc063",
-        hoverBG: "#9bc063"
+        hoverBG: "#c5ed89"
     },
     Tobias_Funke: {
         colBG: "#0059B3",
