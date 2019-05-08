@@ -8,16 +8,15 @@
     flex-direction: column;
     justify-content: flex-end;
     padding:0 3rem 0 3rem;
-    /* background-color:cyan; */
     min-width:60rem;
-    /* overflow: auto; */
 }
 .main-middle .content-container {
-    overflow: hidden;
-}
-.main-middle .content-container:hover {
     overflow: auto;
 }
+/* if you want to show the scrollbar only on hover, set overflow to 'hidden' and uncomment this:
+.main-middle .content-container:hover {
+    overflow: auto;
+} */
 .main-middle .content-container::-webkit-scrollbar {
     width:0.8rem;
     background-color: transparent;

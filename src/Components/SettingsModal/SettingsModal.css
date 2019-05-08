@@ -34,9 +34,10 @@
     position:absolute;
     top:3rem;
     left:1.5rem;
-    width:28.5rem;
-    height:18rem;
+    width:27rem;
+    height:20rem;
     font-size: 1.6rem;
+    overflow:hidden;
 }
 .modal-top .header-text-container h1 {
     font-size:3rem;
