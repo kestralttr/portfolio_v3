@@ -20,6 +20,7 @@ const Experience = props => {
                     imageSrc:TrapezeLabs
                     }}>
                     <div>• Rebuilt our customer-facing codebase in ReactJS/Redux.  By creating a single application that handles all verticals, development time required to add additional products was halved, while load times were reduced by 20% and conversion rates increased by 2%.</div>
+                    <br></br>
                     <div>• Designed and built the Compliant CMS front-end:  a service which allows fast, easy generation of bank-compliant, fully customizable, e-commerce websites for merchant account approval.</div>
             </Message>
             <Message 
@@ -33,6 +34,7 @@ const Experience = props => {
                     imageSrc:IGN
                     }}>
                     <div>• Created the mobile-first IGN Show Index page and redesigned Author Pages to better showcase all relevant content.</div>
+                    <br></br>
                     <div>• Improved the advertising experience for international visitors using IGN’s ReactJS video player.</div>
             </Message>
             <Message 
@@ -46,6 +48,7 @@ const Experience = props => {
                     imageSrc:LeoBurnett
                     }}>
                     <div>• Led the management of 15+ advertising campaigns, all of which were finished on schedule.</div>
+                    <br></br>
                     <div>• Launched campaigns for Splatoon, Super Smash Bros. for Wii U, and amiibo -- all of which outperformed expectations. </div>
             </Message>
         </div>
