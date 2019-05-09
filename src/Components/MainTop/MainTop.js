@@ -5,13 +5,13 @@ import Gear_Icon from 'Images/gear_icon.png'
 const returnDescription = (currentSection) => {
     switch (currentSection) {
         case "about":
-            return "who i am";
+            return "About me";
         case "experience":
-            return "what i've done";
+            return "Things that I've done";
         case "work":
-            return "what i've built";
+            return "Stuff that I've built";
         case "contact":
-            return "where i am";
+            return "How to reach me";
         default:
             return "";
     }
