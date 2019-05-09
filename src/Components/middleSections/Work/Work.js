@@ -48,9 +48,9 @@ const Work = props => {
                 authorName="alex"
                 time="ReactJS • Webpack"
                 link={{
-                    text:"Trapeze Labs Home Page",
+                    text:"Trapeze Labs Business Website",
                     url:"https://trapezelabs.io",
-                    description: "A service which allows quick and easy generation of compliant, fully-customizable, e-commerce sites for merchant account approval.",
+                    description: "The website for Trapeze Labs -- offering company information and contact details for potential customers.",
                     imageSrc:trapezelabshomepage
                     }}>
                     <div>• Uses styled-components to keep styling information organized and easy to update.</div>

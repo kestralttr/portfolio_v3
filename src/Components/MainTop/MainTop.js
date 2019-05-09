@@ -32,7 +32,7 @@ const MainTop = (props) => {
                     <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0">Download Resume</a>
                 </div>
                 <div>
-                    <img className="settings-button" onClick={props.openSettingsModal} src={Gear_Icon} alt="Settings Button"/>
+                    <span className="download-button" onClick={props.openSettingsModal} src={Gear_Icon} alt="Settings Button">Change Avatar</span>
                 </div>
             </div>
         </div>
