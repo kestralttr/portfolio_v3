@@ -26,6 +26,9 @@ const MainTop = (props) => {
             </div>
             <div className="main-top-right-container">
                 <div>
+                    <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://github.com/kestralttr/portfolio_v3">See the code for this site</a>
+                </div>
+                <div>
                     <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0">Download Resume</a>
                 </div>
                 <div>

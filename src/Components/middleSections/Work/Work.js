@@ -14,7 +14,7 @@ const Work = props => {
             <Message 
             profilePic={Thumb_Bennett} 
             authorName="alex"
-            time="11:35 AM"
+            time="ReactJS • Redux • Webpack • SASS"
             link={{
                 text:"Trap3ze Web Application (Front-End)",
                 url:"",
@@ -31,7 +31,7 @@ const Work = props => {
             <Message 
             profilePic={Thumb_Bennett} 
             authorName="alex"
-            time="11:37 AM"
+            time="ReactJS • Redux • Webpack • CSS3"
             link={{
                 text:"Compliant CMS Front-End",
                 url:"https://www.ign.com/watch/naomi",
@@ -46,7 +46,7 @@ const Work = props => {
             <Message 
                 profilePic={Thumb_Bennett} 
                 authorName="alex"
-                time="11:38 AM"
+                time="ReactJS • Webpack"
                 link={{
                     text:"Trapeze Labs Home Page",
                     url:"https://trapezelabs.io",
@@ -61,7 +61,7 @@ const Work = props => {
             <Message 
             profilePic={Thumb_Bennett} 
             authorName="alex"
-            time="11:39 AM"
+            time="PHP • Zend • CSS3"
             link={{
                 text:"IGN Shows Page",
                 url:"https://www.ign.com/watch",
@@ -76,7 +76,7 @@ const Work = props => {
             <Message 
             profilePic={Thumb_Bennett} 
             authorName="alex"
-            time="11:45 AM"
+            time="PHP • Zend • CSS3"
             link={{
                 text:"IGN Author Pages",
                 url:"https://www.ign.com/watch/naomi",

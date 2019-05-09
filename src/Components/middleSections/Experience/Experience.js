@@ -12,7 +12,7 @@ const Experience = props => {
             <Message 
                 profilePic={Thumb_Bennett} 
                 authorName="alex"
-                time="3:12 PM"
+                time="Fall 2017 - Present"
                 link={{
                     text:"Trapeze Labs - Front-End JavaScript Developer",
                     url:"https://trapezelabs.io",
@@ -26,9 +26,9 @@ const Experience = props => {
             <Message 
                 profilePic={Thumb_Bennett} 
                 authorName="alex"
-                time="3:14 PM"
+                time="Summer 2017"
                 link={{
-                    text:"IGN - Front-End Developer Intern",
+                    text:"IGN - Front-End Development Intern",
                     url:"https://www.ign.com/",
                     description: "A world-renowned entertainment media company, specializing in video game journalism.",
                     imageSrc:IGN
@@ -40,7 +40,7 @@ const Experience = props => {
             <Message 
                 profilePic={Thumb_Bennett} 
                 authorName="alex"
-                time="3:17 PM"
+                time="Summer 2014 - Summer 2016"
                 link={{
                     text:"Leo Burnett Company - Asst. Advertising Executive for Nintendo",
                     url:"https://leoburnett.com/",
