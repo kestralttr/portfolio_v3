@@ -5,6 +5,8 @@ import Thumb_Bennett from 'Images/thumb_bennett.jpg'
 import ignshows from 'Images/ignshows.jpg'
 import petcbd from 'Images/petcbd.jpg'
 import pvpauthor from 'Images/pvpauthor.jpg'
+import compliantcms from 'Images/compliantcms.gif'
+import trapezelabshomepage from 'Images/trapezelabshomepage.jpg'
 
 const Work = props => {
     return(
@@ -15,7 +17,7 @@ const Work = props => {
             time="11:35 AM"
             link={{
                 text:"Trap3ze Web Application (Front-End)",
-                url:"https://www.ign.com/watch/naomi",
+                url:"",
                 description: "Customer-facing e-commerce application capable of rendering all sales verticals while reusing core components.",
                 imageSrc:petcbd
                 }}>
@@ -34,12 +36,27 @@ const Work = props => {
                 text:"Compliant CMS Front-End",
                 url:"https://www.ign.com/watch/naomi",
                 description: "A service which allows quick and easy generation of compliant, fully-customizable, e-commerce sites for merchant account approval.",
-                imageSrc:""
+                imageSrc:compliantcms
                 }}>
-                <div>• Uses component styles to apply dynamic styling and positioning data provided by the CMS.</div>
+                <div>• Positions and styles page elements dynamically based on data provided by the CMS.</div>
                 <br></br>
                 <div>• Displays a fully-functional order page in either single, multi, or cart configurations for product selection.</div>
                 <br></br>
+            </Message>
+            <Message 
+                profilePic={Thumb_Bennett} 
+                authorName="alex"
+                time="11:38 AM"
+                link={{
+                    text:"Trapeze Labs Home Page",
+                    url:"https://trapezelabs.io",
+                    description: "A service which allows quick and easy generation of compliant, fully-customizable, e-commerce sites for merchant account approval.",
+                    imageSrc:trapezelabshomepage
+                    }}>
+                    <div>• Uses styled-components to keep styling information organized and easy to update.</div>
+                    <br></br>
+                    <div>• Features pixel-perfect replication of designer wireframes.</div>
+                    <br></br>
             </Message>
             <Message 
             profilePic={Thumb_Bennett} 
