@@ -13,7 +13,7 @@ const About = props => {
             authorName="alex"
             time="11:32 AM">
                 <div>Hey there!</div>
-                <div>Weclome to my Slack-themed personal site.</div>
+                <div>Welcome to my Slack-themed personal site.</div>
                 <div>If you're familiar with Slack, you should know how to navigate around.  If not, it's easy enough:  just click the channel name in the sidebar that interests you and you'll see the contents shown in this section.</div>
                 <div></div>
             </Message>

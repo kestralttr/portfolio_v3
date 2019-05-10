@@ -3,6 +3,8 @@ import About from 'Components/middleSections/About/About.js'
 import Experience from 'Components/middleSections/Experience/Experience.js'
 import Work from 'Components/middleSections/Work/Work.js'
 import Contact from 'Components/middleSections/Contact/Contact.js'
+import User from 'Components/middleSections/User/User.js'
+import Alex from 'Components/middleSections/Alex/Alex.js'
 import './MainMiddle.css'
 
 export default class MainMiddle extends React.Component {
@@ -19,11 +21,13 @@ export default class MainMiddle extends React.Component {
             case "experience":
                 return <Experience />;
             case "work":
-                return <Work />
+                return <Work />;
             case "contact":
-                return <Contact />
+                return <Contact />;
+            case "alex":
+                return <Alex />;
             default:
-                return null;
+                return <User />;
         }
     }
 
