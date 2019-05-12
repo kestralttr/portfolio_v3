@@ -2,8 +2,8 @@ import React from 'react'
 import './MainTop.css'
 import Gear_Icon from 'Images/gear_icon.png'
 
-const returnDescription = (currentSection) => {
-    switch (currentSection) {
+const returnDescription = (currentChannel) => {
+    switch (currentChannel) {
         case "about":
             return "About me";
         case "experience":
@@ -21,8 +21,8 @@ const MainTop = (props) => {
     return(
         <div className="Main-top">
             <div className="main-top-left-container">
-                <div className="main-top-title">{props.currentSection}</div>
-                <div className="main-top-description">{returnDescription(props.currentSection)}</div>
+                <div className="main-top-title">{props.currentChannel}</div>
+                <div className="main-top-description">{returnDescription(props.currentChannel)}</div>
             </div>
             <div className="main-top-right-container">
                 <div>

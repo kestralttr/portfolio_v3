@@ -25,8 +25,8 @@ export default class MessageInput extends React.Component {
     }
 
     componentDidUpdate(prevProps,prevState) {
-        if(prevProps.currentSection !== this.props.currentSection) {
-            if(this.state.sectionsThatDisallowTextInput.includes(this.props.currentSection)) {
+        if(prevProps.currentChannel !== this.props.currentChannel) {
+            if(this.state.sectionsThatDisallowTextInput.includes(this.props.currentChannel)) {
                 this.setState({textInputAllowed: false});
             } else {
                 this.setState({textInputAllowed: true});

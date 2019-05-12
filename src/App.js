@@ -10,7 +10,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      currentSection: "about",
+      currentChannel: "about",
       settingsModalActive: true,
       activeAvatar: "Darth_Vader",
       messageData: {
@@ -19,7 +19,7 @@ class App extends Component {
       }
     }
 
-    this.updateCurrentSection = this.updateCurrentSection.bind(this);
+    this.updateCurrentChannel = this.updateCurrentChannel.bind(this);
     this.openSettingsModal = this.openSettingsModal.bind(this);
     this.closeSettingsModal = this.closeSettingsModal.bind(this);
     this.selectAvatar = this.selectAvatar.bind(this);
@@ -29,8 +29,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Sidebar updateCurrentSection={this.updateCurrentSection} currentSection={this.state.currentSection} activeAvatar={this.state.activeAvatar} />
-        <Main currentSection={this.state.currentSection} openSettingsModal={this.openSettingsModal} saveMessageDataObject={this.saveMessageDataObject}/>
+        <Sidebar updateCurrentChannel={this.updateCurrentChannel} currentChannel={this.state.currentChannel} activeAvatar={this.state.activeAvatar} />
+        <Main currentChannel={this.state.currentChannel} openSettingsModal={this.openSettingsModal} saveMessageDataObject={this.saveMessageDataObject}/>
         <SettingsModal active={this.state.settingsModalActive} closeSettingsModal={this.closeSettingsModal} activeAvatar={this.state.activeAvatar} selectAvatar={this.selectAvatar} />
       </div>
     );
@@ -44,10 +44,10 @@ class App extends Component {
     }
   }
 
-  updateCurrentSection(section) {
+  updateCurrentChannel(section) {
     return (e) => {
       this.setState({
-        currentSection: section
+        currentChannel: section
       })
     }
   }

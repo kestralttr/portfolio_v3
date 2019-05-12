@@ -24,8 +24,8 @@ const Sidebar = props => {
         activeItemBG={returnColor(props.activeAvatar,"activeItemBG")}
         activeItemText={returnColor(props.activeAvatar,"activeItemText")}
         header="Channels"
-        updateCurrentSection={props.updateCurrentSection}
-        currentSection={props.currentSection}
+        updateCurrentChannel={props.updateCurrentChannel}
+        currentChannel={props.currentChannel}
         >
             {"about"}
             {"experience"}
@@ -38,8 +38,8 @@ const Sidebar = props => {
         activeItemBG={returnColor(props.activeAvatar,"activeItemBG")}
         activeItemText={returnColor(props.activeAvatar,"activeItemText")}
         header="Direct Messages"
-        updateCurrentSection={props.updateCurrentSection}
-        currentSection={props.currentSection}
+        updateCurrentChannel={props.updateCurrentChannel}
+        currentChannel={props.currentChannel}
         >
             {"alex"}
             {returnAvatarName(props.activeAvatar)}

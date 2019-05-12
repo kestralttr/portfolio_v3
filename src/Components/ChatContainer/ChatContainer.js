@@ -8,7 +8,7 @@ const ChatContainer = props => {
     let hoverColor = null;
     const children = React.Children.map(props.children, child => {
         activeClass = "";
-        if(props.currentSection && props.currentSection === child) {
+        if(props.currentChannel && props.currentChannel === child) {
             activeClass = "active-section";
             activeBGColor = props.activeItemBG;
             activeTextColor = props.activeItemText;
@@ -27,7 +27,7 @@ const ChatContainer = props => {
                 color: activeTextColor
 
             }}
-            onClick={props.updateCurrentSection(`${child}`)}
+            onClick={props.updateCurrentChannel(`${child}`)}
             >
                 {props.icon} {child}</li>
         )

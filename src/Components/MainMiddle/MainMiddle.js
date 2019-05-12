@@ -15,7 +15,7 @@ export default class MainMiddle extends React.Component {
     }
 
     renderSection() {
-        switch (this.props.currentSection) {
+        switch (this.props.currentChannel) {
             case "about":
                 return <About />;
             case "experience":

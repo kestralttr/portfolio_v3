@@ -18,13 +18,13 @@ export default class Main extends React.Component {
         return(
             <div className="Main">
                 <MainTop 
-                currentSection={this.props.currentSection}
+                currentChannel={this.props.currentChannel}
                 openSettingsModal={this.props.openSettingsModal}
                 />
-                <MainMiddle currentSection={this.props.currentSection} />
+                <MainMiddle currentChannel={this.props.currentChannel} />
                 <div className="Main-bottom">
                     <div className="message-input-button">+</div>
-                    <MessageInput currentSection={this.props.currentSection} saveMessageDataObject={this.props.saveMessageDataObject} />
+                    <MessageInput currentChannel={this.props.currentChannel} saveMessageDataObject={this.props.saveMessageDataObject} />
                 </div>
             </div>
         )
