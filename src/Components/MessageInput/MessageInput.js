@@ -56,7 +56,6 @@ export default class MessageInput extends React.Component {
     }
 
     handleInputChange(e) {
-        console.log('working')
         e.preventDefault();
         if(!this.state.textInputAllowed) return null;
 
@@ -65,7 +64,7 @@ export default class MessageInput extends React.Component {
 
     returnPlaceholder() {
         if(this.state.textInputAllowed) {
-            return "Jot something down";
+            return "Jot something down!";
         } else {
             return "Sorry, no typing in this channel.  Try another!"
         }
