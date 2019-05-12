@@ -1,11 +1,11 @@
 import React from 'react'
 import './SettingsModal.css'
-import Darth_Vader from 'Images/avatar_thumbnails/darth_vader.jpg'
-import Hermione_Granger from 'Images/avatar_thumbnails/hermione_granger.jpg'
-import Harley_Quinn from 'Images/avatar_thumbnails/harley_quinn.jpg'
-import The_Hulk from 'Images/avatar_thumbnails/the_hulk.jpg'
-import Gandalf_The_White from 'Images/avatar_thumbnails/gandalf_the_white.jpg'
-import Tobias_Funke from 'Images/avatar_thumbnails/tobias_funke.jpg'
+import Darth_Vader from 'Images/avatar_thumbnails/Darth_Vader.jpg'
+import Hermione_Granger from 'Images/avatar_thumbnails/Hermione_Granger.jpg'
+import Harley_Quinn from 'Images/avatar_thumbnails/Harley_Quinn.jpg'
+import The_Hulk from 'Images/avatar_thumbnails/The_Hulk.jpg'
+import Gandalf_The_White from 'Images/avatar_thumbnails/Gandalf_The_White.jpg'
+import Tobias_Funke from 'Images/avatar_thumbnails/Tobias_Funke.jpg'
 import MUHFACE from 'Images/muhface.jpg'
 
 const stopPropagation = (e) => {

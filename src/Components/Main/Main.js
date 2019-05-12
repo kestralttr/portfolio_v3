@@ -21,7 +21,7 @@ export default class Main extends React.Component {
                 currentChannel={this.props.currentChannel}
                 openSettingsModal={this.props.openSettingsModal}
                 />
-                <MainMiddle currentChannel={this.props.currentChannel} activeAvatar={this.props.activeAvatar} />
+                <MainMiddle currentChannel={this.props.currentChannel} activeAvatar={this.props.activeAvatar} messageData={this.props.messageData}/>
                 <div className="Main-bottom">
                     <div className="message-input-button">+</div>
                     <MessageInput currentChannel={this.props.currentChannel} saveMessageDataObject={this.props.saveMessageDataObject} />

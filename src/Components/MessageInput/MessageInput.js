@@ -74,9 +74,6 @@ export default class MessageInput extends React.Component {
     handleEnterKeyPress(e) {
         if(this.state.textInputAllowed && this.state.inputFieldFocused && e.key === "Enter") {
             e.preventDefault();
-            let d = new Date();
-            let dateText = d.toTimeString();
-
             this.submitMessage();
         }
     }

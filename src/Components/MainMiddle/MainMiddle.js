@@ -5,6 +5,7 @@ import Work from 'Components/middleSections/Work/Work.js'
 import Contact from 'Components/middleSections/Contact/Contact.js'
 import User from 'Components/middleSections/User/User.js'
 import Alex from 'Components/middleSections/Alex/Alex.js'
+import Message from 'Components/Message/Message.js'
 import './MainMiddle.css'
 
 export default class MainMiddle extends React.Component {
@@ -12,6 +13,28 @@ export default class MainMiddle extends React.Component {
         super(props);
 
         this.renderSection = this.renderSection.bind(this);
+        this.renderAllMessages = this.renderAllMessages.bind(this);
+    }
+
+    renderAllMessages(key) {
+        return() => {
+            let renderedMessageArray = [];
+        
+            this.props.messageData[key].forEach((messageDataObject, i) => {
+                renderedMessageArray.push(
+                    <Message 
+                    key={i}
+                    profilePic={require(`Images/avatar_thumbnails/${this.props.activeAvatar}.jpg`)} 
+                    authorName={this.props.activeAvatar.split("_").join(" ")}
+                    time={messageDataObject.time}>
+                        <div>{messageDataObject.text}</div>
+                        <div></div>
+                    </Message>
+                )
+                // this is where to insert the messages from Alex for the "alex" component
+            });
+            return renderedMessageArray;
+        }
     }
 
     renderSection() {
@@ -25,9 +48,9 @@ export default class MainMiddle extends React.Component {
             case "contact":
                 return <Contact />;
             case "alex":
-                return <Alex />;
+                return <Alex renderAllMessages={this.renderAllMessages('alex')} />;
             default:
-                return <User />;
+                return <User renderAllMessages={this.renderAllMessages('user')}/>;
         }
     }
 

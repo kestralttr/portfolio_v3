@@ -30,7 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <Sidebar updateCurrentChannel={this.updateCurrentChannel} currentChannel={this.state.currentChannel} activeAvatar={this.state.activeAvatar} />
-        <Main currentChannel={this.state.currentChannel} openSettingsModal={this.openSettingsModal} saveMessageDataObject={this.saveMessageDataObject} activeAvatar={this.state.activeAvatar}/>
+        <Main currentChannel={this.state.currentChannel} openSettingsModal={this.openSettingsModal} messageData={this.state.messageData} saveMessageDataObject={this.saveMessageDataObject} activeAvatar={this.state.activeAvatar}/>
         <SettingsModal active={this.state.settingsModalActive} closeSettingsModal={this.closeSettingsModal} activeAvatar={this.state.activeAvatar} selectAvatar={this.selectAvatar} />
       </div>
     );
@@ -62,13 +62,10 @@ class App extends Component {
   }
 
   saveMessageDataObject(channel,messageObject) {
-    console.log(messageObject);
     let channelName = channel === 'alex' ? 'alex' : 'user';
     let messageDataState = merge({},this.state.messageData);
-    console.log(channelName)
     messageDataState[channelName].push(messageObject);
     this.setState({messageData:messageDataState});
-
   }
 
 }
