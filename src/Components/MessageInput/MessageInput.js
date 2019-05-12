@@ -20,6 +20,8 @@ export default class MessageInput extends React.Component {
         this.handleEnterKeyPress = this.handleEnterKeyPress.bind(this);
         this.handleInputFieldFocus = this.handleInputFieldFocus.bind(this);
         this.handleInputFieldBlur = this.handleInputFieldBlur.bind(this);
+        this.formatTimeInteger = this.formatTimeInteger.bind(this);
+        this.returnTimeString = this.returnTimeString.bind(this);
     }
 
     componentDidUpdate(prevProps,prevState) {
@@ -30,6 +32,25 @@ export default class MessageInput extends React.Component {
                 this.setState({textInputAllowed: true});
             }
         }
+    }
+
+    formatTimeInteger(timeInteger) {
+        if(timeInteger.toString().length < 2) {
+            timeInteger = "0" + timeInteger.toString();
+        }
+        return timeInteger;
+    }
+
+    returnTimeString() {
+        let hours = new Date().getHours();
+        let minutes = new Date().getMinutes();
+        let AMPM = "AM";
+        if(hours > 12) {
+            hours = hours-12;
+            AMPM = "PM"
+        }
+        let timeString = `${this.formatTimeInteger(hours)}:${this.formatTimeInteger(minutes)} ${AMPM}`;
+        return timeString;
     }
 
     handleInputChange(e) {
@@ -63,6 +84,10 @@ export default class MessageInput extends React.Component {
                 text: ""
             }
         }
+    }
+
+    submitMessage() {
+
     }
 
     handleInputFieldFocus(e) {
