@@ -10,7 +10,7 @@ export default class MessageInput extends React.Component {
             sectionsThatDisallowTextInput: [
                 "about","experience","work","contact"
             ],
-            text:"",
+            inputFieldText:"",
             inputFieldFocused:false
             
         }
@@ -22,6 +22,8 @@ export default class MessageInput extends React.Component {
         this.handleInputFieldBlur = this.handleInputFieldBlur.bind(this);
         this.formatTimeInteger = this.formatTimeInteger.bind(this);
         this.returnTimeString = this.returnTimeString.bind(this);
+        this.submitMessage = this.submitMessage.bind(this);
+        this.clearInputField = this.clearInputField.bind(this);
     }
 
     componentDidUpdate(prevProps,prevState) {
@@ -58,7 +60,7 @@ export default class MessageInput extends React.Component {
         e.preventDefault();
         if(!this.state.textInputAllowed) return null;
 
-        this.setState({text:e.target.value});
+        this.setState({inputFieldText:e.target.value});
     }
 
     returnPlaceholder() {
@@ -72,22 +74,29 @@ export default class MessageInput extends React.Component {
     handleEnterKeyPress(e) {
         if(this.state.textInputAllowed && this.state.inputFieldFocused && e.key === "Enter") {
             e.preventDefault();
-            console.log(e.key)
             let d = new Date();
             let dateText = d.toTimeString();
-            console.log(dateText)
 
-            let messageDataObject = {
-                profilePic: null,
-                authorName: null,
-                time: null,
-                text: ""
-            }
+            this.submitMessage();
         }
     }
 
     submitMessage() {
+        if(this.state.inputFieldText.length === 0) {return null;}
 
+        let messageObject = {
+            time: this.returnTimeString(),
+            text: this.state.inputFieldText
+        };
+
+        this.props.saveMessageDataObject(this.props.currentChannel,messageObject);
+        this.clearInputField();
+    }
+
+    clearInputField() {
+        this.setState({
+            inputFieldText: ""
+        });
     }
 
     handleInputFieldFocus(e) {
@@ -103,7 +112,7 @@ export default class MessageInput extends React.Component {
             <input 
             className="message-input" 
             placeholder={this.returnPlaceholder()}
-            value={this.state.text}
+            value={this.state.inputFieldText}
             onChange={this.handleInputChange}
             onKeyPress={this.handleEnterKeyPress}
             onFocus={this.handleInputFieldFocus}

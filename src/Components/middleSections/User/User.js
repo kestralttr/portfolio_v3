@@ -4,10 +4,6 @@ import Thumb_Bennett from 'Images/thumb_bennett.jpg'
 
 let TH = "thumb_bennett.jpg"
 
-// [
-//     {profPic, author, time, text}
-// ]
-
 const renderAllMessages = (messageDataArray) => {
     let renderedMessageArray = [];
 
