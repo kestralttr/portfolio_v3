@@ -10,6 +10,9 @@
     padding:0 3rem 0 3rem;
     min-width:60rem;
 }
+.main-middle strong {
+    font-weight: 700;
+}
 .main-middle .content-container {
     overflow: auto;
 }

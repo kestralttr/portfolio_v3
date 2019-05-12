@@ -32,6 +32,7 @@ export default class MainMiddle extends React.Component {
                     </Message>
                 )
                 // this is where to insert the messages from Alex for the "alex" component
+                
             });
             return renderedMessageArray;
         }
