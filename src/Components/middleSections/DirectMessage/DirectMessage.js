@@ -1,7 +1,6 @@
 import React from 'react'
-import './Alex.css'
 
-class Alex extends React.Component {
+class DirectMessage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -26,4 +25,4 @@ class Alex extends React.Component {
     }
 }
 
-export default Alex;
+export default DirectMessage;

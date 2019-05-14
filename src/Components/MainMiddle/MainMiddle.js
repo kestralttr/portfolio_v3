@@ -5,7 +5,9 @@ import Work from 'Components/middleSections/Work/Work.js'
 import Contact from 'Components/middleSections/Contact/Contact.js'
 import User from 'Components/middleSections/User/User.js'
 import Alex from 'Components/middleSections/Alex/Alex.js'
+import DirectMessage from 'Components/middleSections/DirectMessage/DirectMessage.js'
 import Message from 'Components/Message/Message.js'
+import automatedResponses from 'Static_Data/automatedResponses.js'
 import './MainMiddle.css'
 
 export default class MainMiddle extends React.Component {
@@ -14,6 +16,7 @@ export default class MainMiddle extends React.Component {
 
         this.renderSection = this.renderSection.bind(this);
         this.renderAllMessages = this.renderAllMessages.bind(this);
+        this.returnAutomaticReply = this.returnAutomaticReply.bind(this);
     }
 
     renderAllMessages(key) {
@@ -31,10 +34,34 @@ export default class MainMiddle extends React.Component {
                         <div></div>
                     </Message>
                 )
-                // this is where to insert the messages from Alex for the "alex" component
+                if(this.props.currentChannel === "alex") {
+                    renderedMessageArray.push(this.returnAutomaticReply(i));
+                }
+
                 
             });
             return renderedMessageArray;
+        }
+    }
+
+    returnAutomaticReply(i) {
+        if(!automatedResponses[i]) {return null;}
+        let responseText = null;
+        let randomNumber = Math.floor(Math.random()*Math.floor(automatedResponses[i].length));
+        responseText = automatedResponses[i][randomNumber]; 
+        if(responseText) {
+            return(
+                <Message 
+                key={i+1*1000}
+                profilePic={require(`Images/thumb_bennett.jpg`)} 
+                authorName={"alex"}
+                time="10:00 AM">
+                    <div>{responseText}</div>
+                    <div></div>
+                </Message>
+            )
+        } else {
+            return null;
         }
     }
 
@@ -49,9 +76,9 @@ export default class MainMiddle extends React.Component {
             case "contact":
                 return <Contact />;
             case "alex":
-                return <Alex renderAllMessages={this.renderAllMessages('alex')} />;
+                return <DirectMessage renderAllMessages={this.renderAllMessages('alex')} />;
             default:
-                return <User renderAllMessages={this.renderAllMessages('user')}/>;
+                return <DirectMessage renderAllMessages={this.renderAllMessages('user')}/>;
         }
     }
 
