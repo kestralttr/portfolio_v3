@@ -33,7 +33,7 @@ export default class MainMiddle extends React.Component {
                     </Message>
                 )
                 if(this.props.currentChannel === "alex") {
-                    renderedMessageArray.push(this.returnAutomaticReply(i));
+                    renderedMessageArray.push(this.returnAutomaticReply(i, messageDataObject.time));
                 }
 
                 
@@ -42,7 +42,7 @@ export default class MainMiddle extends React.Component {
         }
     }
 
-    returnAutomaticReply(i) {
+    returnAutomaticReply(i, time) {
         if(!automatedResponses[i]) {return null;}
         let responseText = null;
         let randomNumber = Math.floor(Math.random()*Math.floor(automatedResponses[i].length));
@@ -53,7 +53,7 @@ export default class MainMiddle extends React.Component {
                 key={i+1*1000}
                 profilePic={require(`Images/thumb_bennett.jpg`)} 
                 authorName={"alex"}
-                time="10:00 AM">
+                time={time}>
                     <div>{responseText}</div>
                     <div></div>
                 </Message>

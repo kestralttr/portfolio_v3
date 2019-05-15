@@ -5,6 +5,8 @@ export default class MessageInput extends React.Component {
     constructor(props) {
         super(props);
 
+        this.textInput = React.createRef();
+
         this.state = {
             textInputAllowed: false,
             sectionsThatDisallowTextInput: [
@@ -27,6 +29,7 @@ export default class MessageInput extends React.Component {
     }
 
     componentDidUpdate(prevProps,prevState) {
+        // Allows/disallows text input based on current channel
         if(prevProps.currentChannel !== this.props.currentChannel) {
             if(this.state.sectionsThatDisallowTextInput.includes(this.props.currentChannel)) {
                 this.setState({textInputAllowed: false});
@@ -34,6 +37,12 @@ export default class MessageInput extends React.Component {
                 this.setState({textInputAllowed: true});
             }
         }
+
+        // Automatically focuses text input if channel is 'alex' or 'user'
+        if((prevProps.currentChannel !== 'alex' && this.props.currentChannel === 'alex') ||
+            (!prevProps.currentChannel.includes(" ") && this.props.currentChannel.includes(" "))) {
+                this.textInput.current.focus();
+            }
     }
 
     formatTimeInteger(timeInteger) {
@@ -106,6 +115,7 @@ export default class MessageInput extends React.Component {
     render() {
         return(
             <input 
+            ref={this.textInput}
             className="message-input" 
             placeholder={this.returnPlaceholder()}
             value={this.state.inputFieldText}
