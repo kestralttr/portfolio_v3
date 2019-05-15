@@ -14,16 +14,26 @@ export default class Main extends React.Component {
     }
 
     render() {
+        console.log(this.props.currentChannel)
         return(
             <div className="Main">
                 <MainTop 
+                activeAvatar={this.props.activeAvatar}
                 currentChannel={this.props.currentChannel}
                 openSettingsModal={this.props.openSettingsModal}
                 />
-                <MainMiddle currentChannel={this.props.currentChannel} activeAvatar={this.props.activeAvatar} messageData={this.props.messageData}/>
+                <MainMiddle
+                activeAvatar={this.props.activeAvatar}
+                currentChannel={this.props.currentChannel}
+                messageData={this.props.messageData}
+                />
                 <div className="Main-bottom">
                     <div className="message-input-button">+</div>
-                    <MessageInput currentChannel={this.props.currentChannel} activeAvatar={this.props.activeAvatar} saveMessageDataObject={this.props.saveMessageDataObject} />
+                    <MessageInput
+                    activeAvatar={this.props.activeAvatar}
+                    currentChannel={this.props.currentChannel}
+                    saveMessageDataObject={this.props.saveMessageDataObject}
+                    />
                 </div>
             </div>
         )

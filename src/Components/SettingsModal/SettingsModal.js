@@ -27,8 +27,9 @@ const SettingsModal = (props) => {
     let muhFaceBackground = `url(${MUHFACE})`;
     return(
         <div className="background-overlay" onClick={props.closeSettingsModal}>
-            <div className="container" onClick={stopPropagation}>
-            <div className="close-button" onClick={props.closeSettingsModal}>X</div>
+            <div className="settings-modal-container" onClick={stopPropagation}>
+            <div className="close-button-x" onClick={props.closeSettingsModal}>X</div>
+            <div className="close-button-word" onClick={props.closeSettingsModal}>Close</div>
                 <div className="modal-top" style={{backgroundImage: muhFaceBackground}}>
                 <div className="header-text-container">
                     <h1>Alex Bennett</h1>

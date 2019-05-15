@@ -75,7 +75,7 @@ export default class MessageInput extends React.Component {
         if(this.state.textInputAllowed) {
             return "Jot something down!";
         } else {
-            return "Sorry, no typing in this channel.  Try another!"
+            return "Sorry, no typing here."
         }
     }
 

@@ -65,3 +65,18 @@
     margin-top:2.2rem;
     line-height:2rem;
 }
+
+@media (max-width:60rem) {
+    .main-middle {
+        position:absolute;
+        top:6.1rem;
+        left:0;
+        right:0;
+        bottom:7rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding:0 3rem 0 3rem;
+        min-width:0;
+    }
+}

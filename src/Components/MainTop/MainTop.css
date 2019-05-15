@@ -19,6 +19,9 @@
     margin-top:1rem;
     font-size: 1.2rem;
 }
+.main-top-right-mobile-horizontal-scroll {
+    display:inline-block;
+}
 .main-top-right-container {
     position:absolute;
     height:4rem;
@@ -55,4 +58,17 @@
 .main-top-right-container div .settings-button {
     height:3rem;
     cursor:pointer;
+}
+
+@media (max-width:60rem) {
+    .Main-top {
+        width:100%;
+        height:6rem;
+        border-bottom: 1px solid #a5a5a5;
+        min-width: 0rem;
+        position:relative;
+    }
+    .main-top-right-container {
+        display:none;
+    }
 }
