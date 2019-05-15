@@ -12,8 +12,10 @@ const returnDescription = (currentChannel) => {
             return "Stuff that I've built";
         case "contact":
             return "How to reach me";
+        case "alex":
+            return "Chat with me"
         default:
-            return "";
+            return "Chat with yourself";
     }
 }
 

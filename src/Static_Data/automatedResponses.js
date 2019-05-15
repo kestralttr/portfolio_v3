@@ -5,7 +5,7 @@ const automatedResponses = [
         "Hello there!  Anything you want to talk with me about?"
     ],
     [
-        "Perfect!  Unfortunately this is an automated response, but you should shoot Alex an email at kestralttr@gmail.com and he'd be happy to get right back to you.",
+        "Unfortunately this is an automated response, but you should shoot Alex an email at kestralttr@gmail.com and he'd be happy to get right back to you.",
         "Okay, so this is just an automated response.  BUT, I'm sure Alex would love to talk with you about this in person, so feel free to shoot him an email at kestralttr@gmail.com",
         "Absolutely, the answer to that is yes.  Just kidding!  This message is automated.  But you should totally email Alex at kestralttr@gmail.com and he'll be able to tell you whether the answer really is 'yes' or not."
     ],
