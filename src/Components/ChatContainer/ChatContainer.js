@@ -1,5 +1,6 @@
 import React from 'react'
 import Radium from 'radium'
+import returnAvatarName from 'Global_Functions/returnAvatarName.js'
 
 const ChatContainer = props => {
     let activeClass = "";
@@ -19,6 +20,10 @@ const ChatContainer = props => {
             activeTextColor = null;
             hoverColor = props.hoverBG;
         }
+        let channelName = child;
+        if(channelName === "user") {
+            channelName = returnAvatarName(props.activeAvatar);
+        }
         return(
             <li className={activeClass}
             style={{
@@ -29,7 +34,7 @@ const ChatContainer = props => {
             }}
             onClick={props.updateCurrentChannel(`${child}`)}
             >
-                {props.icon} {child}</li>
+                {props.icon} {channelName}</li>
         )
     });
     return(

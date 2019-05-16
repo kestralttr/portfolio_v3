@@ -28,7 +28,6 @@ const returnDescription = (currentChannel) => {
 }
 
 const MainTop = (props) => {
-    console.log(props.currentChannel)
     return(
         <div className="Main-top">
             <div className="main-top-left-container">
