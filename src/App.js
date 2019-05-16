@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       currentChannel: "about",
       settingsModalActive: true,
-      activeAvatar: "Darth_Vader",
+      activeAvatar: "darth_vader",
       messageData: {
         alex: [],
         user: []

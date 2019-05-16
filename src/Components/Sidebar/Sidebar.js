@@ -16,7 +16,7 @@ const Sidebar = props => {
             }}>
         <div className="Sidebar-header">
             <div>Alex Bennett's Portfolio</div>
-            <div>{returnAvatarName(props.activeAvatar)}</div>
+            {/* <div>{returnAvatarName(props.activeAvatar)}</div> */}
         </div>
         <ChatContainer
         icon="#"

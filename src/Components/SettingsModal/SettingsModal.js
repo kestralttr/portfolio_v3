@@ -1,11 +1,11 @@
 import React from 'react'
 import './SettingsModal.css'
-import Darth_Vader from 'Images/avatar_thumbnails/Darth_Vader.jpg'
-import Hermione_Granger from 'Images/avatar_thumbnails/Hermione_Granger.jpg'
-import Harley_Quinn from 'Images/avatar_thumbnails/Harley_Quinn.jpg'
-import The_Hulk from 'Images/avatar_thumbnails/The_Hulk.jpg'
-import Gandalf_The_White from 'Images/avatar_thumbnails/Gandalf_The_White.jpg'
-import Tobias_Funke from 'Images/avatar_thumbnails/Tobias_Funke.jpg'
+import darth_vader from 'Images/avatar_thumbnails/darth_vader.jpg'
+import hermione_granger from 'Images/avatar_thumbnails/hermione_granger.jpg'
+import harley_quinn from 'Images/avatar_thumbnails/harley_quinn.jpg'
+import the_hulk from 'Images/avatar_thumbnails/the_hulk.jpg'
+import gandalf_the_white from 'Images/avatar_thumbnails/gandalf_the_white.jpg'
+import tobias_funke from 'Images/avatar_thumbnails/tobias_funke.jpg'
 import MUHFACE from 'Images/muhface.jpg'
 
 const stopPropagation = (e) => {
@@ -43,14 +43,14 @@ const SettingsModal = (props) => {
                         If you want to know more about me and my work, choose your avatar and let's get started!
                     </p>
                     <div className="selection-container">
-                        <img src={Darth_Vader} className={returnClassName("Darth_Vader", props.activeAvatar)} onClick={props.selectAvatar('Darth_Vader')} alt="Darth Vader"/>
-                        <img src={Hermione_Granger} className={returnClassName("Hermione_Granger", props.activeAvatar)} onClick={props.selectAvatar('Hermione_Granger')} alt="Hermione Granger"/>
-                        <img src={Gandalf_The_White} className={returnClassName("Gandalf_The_White", props.activeAvatar)} onClick={props.selectAvatar('Gandalf_The_White')} alt="Gandalf The White"/>
+                        <img src={darth_vader} className={returnClassName("darth_vader", props.activeAvatar)} onClick={props.selectAvatar('darth_vader')} alt="Darth Vader"/>
+                        <img src={hermione_granger} className={returnClassName("hermione_granger", props.activeAvatar)} onClick={props.selectAvatar('hermione_granger')} alt="Hermione Granger"/>
+                        <img src={gandalf_the_white} className={returnClassName("gandalf_the_white", props.activeAvatar)} onClick={props.selectAvatar('gandalf_the_white')} alt="Gandalf The White"/>
                     </div>
                     <div className="selection-container">
-                        <img src={The_Hulk} className={returnClassName("The_Hulk", props.activeAvatar)} onClick={props.selectAvatar('The_Hulk')} alt="Black Widow"/>
-                        <img src={Tobias_Funke} className={returnClassName("Tobias_Funke", props.activeAvatar)} onClick={props.selectAvatar('Tobias_Funke')} alt="Tobias Funke"/>
-                        <img src={Harley_Quinn} className={returnClassName("Harley_Quinn", props.activeAvatar)} onClick={props.selectAvatar('Harley_Quinn')} alt="Wall E"/>
+                        <img src={the_hulk} className={returnClassName("the_hulk", props.activeAvatar)} onClick={props.selectAvatar('the_hulk')} alt="Black Widow"/>
+                        <img src={tobias_funke} className={returnClassName("tobias_funke", props.activeAvatar)} onClick={props.selectAvatar('tobias_funke')} alt="Tobias Funke"/>
+                        <img src={harley_quinn} className={returnClassName("harley_quinn", props.activeAvatar)} onClick={props.selectAvatar('harley_quinn')} alt="Wall E"/>
                     </div>
                 </div>
             </div>
