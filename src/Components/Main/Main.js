@@ -17,6 +17,8 @@ export default class Main extends React.Component {
         return(
             <div className="Main">
                 <MainTop 
+                mobileSidebarVisible={this.props.mobileSidebarVisible}
+                showMobileSidebar={this.props.showMobileSidebar}
                 activeAvatar={this.props.activeAvatar}
                 currentChannel={this.props.currentChannel}
                 openSettingsModal={this.props.openSettingsModal}

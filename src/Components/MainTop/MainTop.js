@@ -28,6 +28,8 @@ const returnDescription = (currentChannel) => {
 }
 
 const MainTop = (props) => {
+    let mobileHamburgerButtonTypeClass = props.mobileSidebarVisible ? "x-icon" : "lines-icon";
+    let mobileHamburgerClass = `mobile-hamburger-button ${mobileHamburgerButtonTypeClass}`;
     return(
         <div className="Main-top">
             <div className="main-top-left-container">
@@ -45,7 +47,7 @@ const MainTop = (props) => {
                     <span className="download-button" onClick={props.openSettingsModal} alt="Settings Button">Change Avatar</span>
                 </div>
             </div>
-            <div className="mobile-hamburger-button">
+            <div className={mobileHamburgerClass} onClick={props.showMobileSidebar}>
                 <div></div>
                 <div></div>
                 <div></div>

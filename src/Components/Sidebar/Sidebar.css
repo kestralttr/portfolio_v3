@@ -6,8 +6,6 @@
     bottom:0;
     font-family: Lato;
     width:20rem;
-    background-color:black;
-    color:#006600;
 }
 .Sidebar-header {
     font-family: Lato-Bold;
@@ -24,4 +22,37 @@
 .Sidebar-chat-container li {
     padding:0.5rem 1rem;
     cursor:pointer;
+}
+
+@media (max-width:60rem) {
+    .Sidebar {
+        position:fixed;
+        left:-20rem;
+        top:0;
+        bottom:0;
+        font-family: Lato;
+        width:20rem;
+        z-index:10;
+        transition-property: left;
+        transition-duration: 0.3s;
+    }
+    .mobile-sidebar-visible {
+        position:fixed;
+        left:0;
+        top:0;
+        bottom:0;
+        font-family: Lato;
+        width:20rem;
+        z-index: 10;
+        transition-property: left;
+        transition-duration: 0.3s;
+    }
+    .mobile-background-visible {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:9;
+    }
 }
