@@ -101,6 +101,7 @@
         margin: 2px 0;
         transition-property: transform;
         transition-duration: 0.3s;
+        cursor: pointer;
     }
     .x-icon > div {
         width: 20px;
@@ -109,6 +110,7 @@
         margin: 2px 0;
         transition-property: transform;
         transition-duration: 0.3s;
+        cursor: pointer;
     }
     .x-icon > div:nth-child(1) {
         -webkit-transform: rotate(-45deg) translate(-5px, 5px);

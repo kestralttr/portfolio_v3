@@ -5,6 +5,8 @@
     bottom:0;
     left:20rem;
     background-color:white;
+    transition-property: left;
+    transition-duration: 0.3s;
 }
 .Main-middle {
     position:absolute;
@@ -57,5 +59,17 @@
         bottom:0;
         left:0;
         background-color:white;
+        transition-property: left;
+        transition-duration: 0.3s;
+    }
+    .Main-bottom {
+        padding:0 2rem 2rem 2rem;
+        position:absolute;
+        bottom:0;
+        min-height:8rem;
+        left:0;
+        right:0;
+        overflow:hidden;
+        display:flex;
     }
 }

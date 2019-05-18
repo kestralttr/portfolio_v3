@@ -32,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Sidebar visible={this.state.mobileSidebarVisible} hideMobileSidebar={this.hideMobileSidebar} updateCurrentChannel={this.updateCurrentChannel} currentChannel={this.state.currentChannel} activeAvatar={this.state.activeAvatar} />
+        <Sidebar visible={this.state.mobileSidebarVisible} hideMobileSidebar={this.hideMobileSidebar} openSettingsModal={this.openSettingsModal} updateCurrentChannel={this.updateCurrentChannel} currentChannel={this.state.currentChannel} activeAvatar={this.state.activeAvatar} />
         <Main mobileSidebarVisible={this.state.mobileSidebarVisible} showMobileSidebar={this.showMobileSidebar} currentChannel={this.state.currentChannel} openSettingsModal={this.openSettingsModal} messageData={this.state.messageData} saveMessageDataObject={this.saveMessageDataObject} activeAvatar={this.state.activeAvatar}/>
         <SettingsModal active={this.state.settingsModalActive} closeSettingsModal={this.closeSettingsModal} activeAvatar={this.state.activeAvatar} selectAvatar={this.selectAvatar} />
       </div>

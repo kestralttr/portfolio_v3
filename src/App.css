@@ -6,3 +6,6 @@
   left:0;
   font-family: Lato;
 }
+.hidden {
+  display:none;
+}

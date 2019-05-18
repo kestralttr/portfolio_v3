@@ -10,6 +10,7 @@ const returnColor = (avatar, key) => {
 const Sidebar = props => {
     let mobileSidebarVisibleClass = props.visible ? "mobile-sidebar-visible" : "";
     let mobileBackgroundVisibleClass = props.visible ? "mobile-background-visible" : "";
+    let mobileButtonContainer = props.visible ? "mobile-button-container" : "hidden";
     let sidebarClass = `Sidebar ${mobileSidebarVisibleClass}`;
     return(
         <React.Fragment>
@@ -49,6 +50,15 @@ const Sidebar = props => {
                     {"alex"}
                     {"user"}
                 </ChatContainer>
+
+                <div className={mobileButtonContainer}>
+                    <div>
+                        <span className="download-button" onClick={props.openSettingsModal} alt="Settings Button">Change Avatar</span>
+                    </div>
+                    <div>
+                        <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0">Download Resume</a>
+                    </div>
+                </div>
             </div>
         </React.Fragment>
     )
