@@ -1,0 +1,82 @@
+.main-middle {
+    position:absolute;
+    top:6.1rem;
+    left:0;
+    right:0;
+    bottom:7rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding:0 3rem 0 3rem;
+    min-width:60rem;
+}
+.main-middle strong {
+    font-weight: 700;
+}
+.main-middle .content-container {
+    overflow: auto;
+}
+/* if you want to show the scrollbar only on hover, set overflow to 'hidden' and uncomment this:
+.main-middle .content-container:hover {
+    overflow: auto;
+} */
+.main-middle .content-container::-webkit-scrollbar {
+    width:0.8rem;
+    background-color: transparent;
+}
+.main-middle .content-container::-webkit-scrollbar-track {
+    width:1.5rem;
+}
+.main-middle .content-container::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    height:2rem;
+	background-color: #8c8c8c;
+}
+.message {
+    position:relative;
+    min-height:3.5rem;
+    font-size:1.6rem;
+    padding:1rem 0 1rem 0;
+    width:98%;
+}
+.profile-pic {
+    position:absolute;
+    display:inline-block;
+    top:1rem;
+    left:0;
+    width:3.5rem;
+    height:3.5rem;
+}
+.author-name {
+    position:absolute;
+    left:5rem;
+}
+.author-name strong {
+    font-weight: 700;
+    font-size:1.4rem;
+}
+.author-name span {
+    font-size: 1.1rem;
+    color:#4f4f4f;
+}
+.text-container {
+    display:inline-block;
+    margin-left:5rem;
+    margin-top:2.2rem;
+    line-height:2rem;
+}
+
+@media (max-width:60rem) {
+    .main-middle {
+        position:absolute;
+        top:6.1rem;
+        left:0;
+        right:0;
+        bottom:10rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding:0 3rem 0 3rem;
+        min-width:0;
+    }
+}
