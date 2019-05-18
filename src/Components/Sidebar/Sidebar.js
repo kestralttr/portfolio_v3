@@ -53,10 +53,31 @@ const Sidebar = props => {
 
                 <div className={mobileButtonContainer}>
                     <div>
-                        <span className="download-button" onClick={props.openSettingsModal} alt="Settings Button">Change Avatar</span>
+                        <span 
+                        className="download-button" 
+                        onClick={props.openSettingsModal}
+                        alt="Settings Button"
+                        style={{
+                            color:returnColor(props.activeAvatar,"itemText"),
+                            borderColor: returnColor(props.activeAvatar,"itemText")
+                        }}
+                        >
+                            Change Avatar
+                        </span>
                     </div>
                     <div>
-                        <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0">Download Resume</a>
+                        <a
+                        className="download-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0"
+                        style={{
+                            color:returnColor(props.activeAvatar,"itemText"),
+                            borderColor: returnColor(props.activeAvatar,"itemText")
+                        }}
+                        >
+                            Download Resume
+                        </a>
                     </div>
                 </div>
             </div>
