@@ -75,7 +75,7 @@ export default class MessageInput extends React.Component {
         if(this.state.textInputAllowed) {
             return "Jot something down!";
         } else {
-            return "Sorry, no typing here."
+            return "No typing on this channel.  :("
         }
     }
 
@@ -105,6 +105,10 @@ export default class MessageInput extends React.Component {
     }
 
     handleInputFieldFocus(e) {
+        if(!this.state.textInputAllowed) {
+            this.textInput.current.blur();
+            return;
+        }
         this.setState({inputFieldFocused: true});
     }
 

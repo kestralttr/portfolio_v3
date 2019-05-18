@@ -45,7 +45,11 @@ const MainTop = (props) => {
                     <span className="download-button" onClick={props.openSettingsModal} alt="Settings Button">Change Avatar</span>
                 </div>
             </div>
-            <span className="mobile-hamburger-button">B</span>
+            <div className="mobile-hamburger-button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
     )
 }

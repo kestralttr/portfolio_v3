@@ -21,8 +21,9 @@ const About = props => {
             profilePic={Thumb_Bennett} 
             authorName="alex"
             time="06:17 AM">
-                <div>I'm currently working as a Front-End JavaScript Developer for an e-commerce startup called Trapeze Labs.</div>
-                <div>I work mainly in JavaScript and specialize in creating single page application with ReactJS/Redux, but I love taking advantage of the opportunity to build something new and different whenever possible.</div>
+                <div>As far as what I'm up to:  </div>
+                <div>I currently work as a Front-End JavaScript Developer for an e-commerce startup called Trapeze Labs.</div>
+                <div>I work mainly in JavaScript and specialize in creating single page applications with ReactJS/Redux, but I love taking advantage of the opportunity to build something new and different whenever possible.</div>
             </Message>
             <Message 
             profilePic={Thumb_Bennett} 

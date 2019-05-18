@@ -16,7 +16,8 @@ class App extends Component {
       messageData: {
         alex: [],
         user: []
-      }
+      },
+      mobileSidebarShown: false
     }
 
     this.updateCurrentChannel = this.updateCurrentChannel.bind(this);
