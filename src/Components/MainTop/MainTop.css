@@ -99,7 +99,7 @@
         height: 3px;
         background-color: grey;
         margin: 2px 0;
-        transition-property: transform;
+        transition-property: transform opacity;
         transition-duration: 0.3s;
         cursor: pointer;
     }
@@ -108,9 +108,10 @@
         height: 3px;
         background-color: grey;
         margin: 2px 0;
-        transition-property: transform;
+        transition-property: transform opacity;
         transition-duration: 0.3s;
         cursor: pointer;
+        opacity:1;
     }
     .x-icon > div:nth-child(1) {
         -webkit-transform: rotate(-45deg) translate(-5px, 5px);
@@ -118,6 +119,8 @@
     }
     .x-icon > div:nth-child(2) {
         opacity: 0;
+        transition-property: transform opacity;
+        transition-duration: 0.3s;
     }
     .x-icon > div:nth-child(3) {
         -webkit-transform: rotate(45deg) translate(-5px, -5px);
