@@ -38,11 +38,12 @@ export default class MessageInput extends React.Component {
             }
         }
 
+        // THIS FEATURE IS CONFUSING ON MOBILE -- NEEDS SOME MORE LOGIC TO DETERMINE IF IT SHOULD FIRE
         // Automatically focuses text input if channel is 'alex' or 'user'
-        if((prevProps.currentChannel !== 'alex' && this.props.currentChannel === 'alex') ||
-            (!prevProps.currentChannel.includes(" ") && this.props.currentChannel.includes(" "))) {
-                this.textInput.current.focus();
-            }
+        // if((prevProps.currentChannel !== 'alex' && this.props.currentChannel === 'alex') ||
+        //     (!prevProps.currentChannel.includes(" ") && this.props.currentChannel.includes(" "))) {
+        //         this.textInput.current.focus();
+        // }
     }
 
     formatTimeInteger(timeInteger) {

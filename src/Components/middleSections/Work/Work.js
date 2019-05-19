@@ -23,7 +23,7 @@ const Work = props => {
                 }}>
                 <div>• Restructures & restyles the rendered output for multiple verticals across all devices, based on a requested config JSON object.</div>
                 <br></br>
-                <div>• Tracks and stores user behavior in both a Redux store and in the browser's local storage to determine when to fire pixels, display downsells, and update purchase information prior to executing transactions.</div>
+                <div>• Tracks and stores user behavior in both a Redux store and in the browser's local storage to determine when to fire tracking pixels, display downsells, and update purchase information prior to executing transactions.</div>
                 <br></br>
                 <div>• Optimizes the bundle size with a number of Webpack features, including tree-shaking, code-splitting, and lazy loading.</div>
                 <br></br>
