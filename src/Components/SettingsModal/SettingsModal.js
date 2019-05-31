@@ -29,7 +29,11 @@ const SettingsModal = (props) => {
         <div className="background-overlay" onClick={props.closeSettingsModal}>
             <div className="settings-modal-container" onClick={stopPropagation}>
             <div className="close-button-x" onClick={props.closeSettingsModal}>X</div>
-            <div className="close-button-word" onClick={props.closeSettingsModal}>Close</div>
+            <div className="close-button-word" onClick={props.closeSettingsModal}>
+                <span>
+                    Continue
+                </span>
+            </div>
                 <div className="modal-top" style={{backgroundImage: muhFaceBackground}}>
                 <div className="header-text-container">
                     <h1>Alex Bennett</h1>

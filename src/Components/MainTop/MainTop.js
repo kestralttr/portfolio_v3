@@ -1,6 +1,5 @@
 import React from 'react'
 import './MainTop.css'
-import Gear_Icon from 'Images/gear_icon.png'
 
 const returnChannelName = (currentChannel, activeAvatar) => {
     if(!['about','experience','work','contact','alex'].includes(currentChannel)) {
