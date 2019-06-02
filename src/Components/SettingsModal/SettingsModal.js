@@ -39,7 +39,7 @@ const SettingsModal = (props) => {
                     <h1>Alex Bennett</h1>
                     <p>Front-End JavaScript Developer</p>
                     <br></br>
-                    <p>Versatile web development enthusiast with professional experience designing, building, and improving complex e-commerce web applications.  Specializes in ReactJS/Redux.  </p>
+                    <p>Versatile web development engineer with proven advertising experience on global brands, looking to continue designing and building complex e-commerce web applications, while improving marketing and sales performance wherever and however possible.  </p>
                 </div>
                 </div>
                 <div className="modal-bottom">
