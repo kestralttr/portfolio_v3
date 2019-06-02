@@ -16,7 +16,7 @@ const Work = props => {
             authorName="alex"
             time="ReactJS • Redux • Webpack • SASS"
             link={{
-                text:"Trap3ze Web Application (Front-End)",
+                text:"Trap3ze E-Commerce Front-End (Proprietary - Please contact for demo)",
                 url:"",
                 description: "Customer-facing e-commerce application capable of rendering all sales verticals while reusing core components.",
                 imageSrc:petcbd
@@ -33,8 +33,8 @@ const Work = props => {
             authorName="alex"
             time="ReactJS • Redux • Webpack • CSS3"
             link={{
-                text:"Compliant CMS Front-End",
-                url:"https://www.ign.com/watch/naomi",
+                text:"Compliant CMS Front-End (Proprietary - Please contact for demo)",
+                url:"",
                 description: "A service which allows quick and easy generation of compliant, fully-customizable, e-commerce sites for merchant account approval.",
                 imageSrc:compliantcms
                 }}>
@@ -85,7 +85,7 @@ const Work = props => {
                 }}>
                 <div>• Determines content size and type for each page, restructuring the page styling accordingly to avoid dead space.</div>
                 <br></br>
-                <div>• Includes the ReactJS-powered video player that runs country-specific advertisements.</div>
+                <div>• Includes the ReactJS-powered video player that runs country-specific advertising.</div>
                 <br></br>
             </Message>
         </div>

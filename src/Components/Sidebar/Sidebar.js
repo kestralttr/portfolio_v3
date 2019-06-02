@@ -70,7 +70,7 @@ const Sidebar = props => {
                         className="download-button"
                         target="_blank"
                         rel="noopener noreferrer"
-                        href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0"
+                        href="https://dl.dropbox.com/s/mw9lnrco1bv70l1/Alex_Bennett_Resume.pdf?dl=0"
                         style={{
                             color:returnColor(props.activeAvatar,"itemText"),
                             borderColor: returnColor(props.activeAvatar,"itemText")

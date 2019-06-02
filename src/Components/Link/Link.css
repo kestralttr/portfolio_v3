@@ -23,6 +23,11 @@
     color:#4272bf;
     font-weight: 700;
 }
+.non-valid-link-url {
+    display:block;
+    text-decoration: none;
+    font-weight: 700;
+}
 .link-image {
     display:block;
     width:40rem;
@@ -35,5 +40,13 @@
 @media (max-width:60rem) {
     .link-image {
         display:none;
+    }
+    .link-container {
+        display:block;
+        margin-left:5rem;
+        margin-top:3.2rem;
+        line-height:2rem;
+        padding-left:2rem;
+        position:relative;
     }
 }

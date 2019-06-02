@@ -40,7 +40,7 @@ const MainTop = (props) => {
                     <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://github.com/kestralttr/portfolio_v3">See the code for this site</a>
                 </div> */}
                 <div>
-                    <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://dl.dropbox.com/s/gwpnbbzztstd3rk/SAMPLE_RESUME.pdf.pdf?dl=0">Download Resume</a>
+                    <a className="download-button" target="_blank" rel="noopener noreferrer" href="https://dl.dropbox.com/s/mw9lnrco1bv70l1/Alex_Bennett_Resume.pdf?dl=0">Download Resume</a>
                 </div>
                 <div>
                     <span className="download-button" onClick={props.openSettingsModal} alt="Settings Button">Change Avatar</span>
